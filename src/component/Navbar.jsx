@@ -2,14 +2,14 @@ import React,{useEffect,useState} from 'react'
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
-    const [scroll, setScroll] = useState(false)
-    useEffect(() => {
-        const handleScroll = () => {
-            setScroll(window.scrollY < 175);
-        }
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll);
-    },[])
+  const [scroll, setScroll] = useState(false)
+  useEffect(() => {
+      const handleScroll = () => {
+          setScroll(window.scrollY < 175);
+      }
+      window.addEventListener('scroll', handleScroll)
+      return () => window.removeEventListener('scroll', handleScroll);
+  },[])
   return (
     <>
   <header className={scroll?"header-wrap style2":"header-wrap style2 sticky"}>
@@ -95,7 +95,7 @@ export default function Navbar() {
                       <Link to="/">Home 1</Link>
                     </li>
                     <li><Link className="active" to="/Home2">Home 2</Link></li>
-                    <li><a href="index-3.html">Home 3</a></li>
+                    <li><Link to={"/Home3"}>Home 3</Link></li>
                   </ul>
                 </li>
                 <li className="has-children">
