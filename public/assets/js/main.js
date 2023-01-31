@@ -10,7 +10,7 @@
     /* -------------------------------------
             Buy Now Button
     -------------------------------------- */
-    $('body').append("<a href='https://themeforest.net/checkout/84123898/create_account?_ga=2.117277253.254096395.1645587066-1382738562.1645587066' class='buy-now-btn' target='_blank'><img src='assets/img/envato.png' alt='envato'/>Buy Now</a>"); 
+    // $('body').append("<a href='https://themeforest.net/checkout/84123898/create_account?_ga=2.117277253.254096395.1645587066-1382738562.1645587066' class='buy-now-btn' target='_blank'><img src='assets/img/envato.png' alt='envato'/>Buy Now</a>"); 
 
     /* -------------------------------------
           Open Search

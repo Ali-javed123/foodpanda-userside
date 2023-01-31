@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import { Link } from 'react-router-dom';
+import { Link ,NavLink} from 'react-router-dom';
 
 export default function Navbar() {
   const [scroll, setScroll] = useState(false)
@@ -101,7 +101,7 @@ export default function Navbar() {
                 <li className="has-children">
                   <a href="#">Services</a>
                   <ul className="sub-menu list-style">
-                    <li><a href="services.html">Our Service</a></li>
+                    <li><NavLink to="/Service">Our Service</NavLink></li>
                     <li>
                       <a href="service-details.html">Service Single</a>
                     </li>

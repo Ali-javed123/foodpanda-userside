@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import { Link } from 'react-router-dom';
+import { Link,NavLink } from 'react-router-dom';
 
 function Header() {
     const [scroll, setScroll] = useState(false)
@@ -86,19 +86,19 @@ function Header() {
             <div id="menu">
               <ul className="main-menu list-style">
                 <li className="has-children">
-                  <Link className="active" to="/">Home</Link>
+                  <NavLink className="active" to="/">Home</NavLink>
                   <ul className="sub-menu list-style">
                     <li>
-                      <Link className="active" to="/">Home 1</Link>
+                      <NavLink className="active" to="/">Home 1</NavLink>
                     </li>
-                    <li><Link to="/Home2">Home 2</Link></li>
-                    <li><a href="index-3.html">Home 3</a></li>
+                    <li><NavLink to="/Home2">Home 2</NavLink></li>
+                    <li><NavLink to="/Home3">Home 3</NavLink></li>
                   </ul>
                 </li>
                 <li className="has-children">
                   <a href="#">Services</a>
                   <ul className="sub-menu list-style">
-                    <li><a href="services.html">Our Service</a></li>
+                    <li><NavLink to="/Service">Our Service</NavLink></li>
                     <li>
                       <a href="service-details.html">Service Single</a>
                     </li>

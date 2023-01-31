@@ -50,7 +50,7 @@ export default function Testimonials() {
         }}
 
         modules={[Pagination,Autoplay]} 
-        className="testimonial-slider-one swiper-container">
+    className="testimonial-slider-one swiper-container">
               <SwiperSlide>
                 <div className="testimonial-item style1">
                   <div className="row justify-content-center mb-2">
