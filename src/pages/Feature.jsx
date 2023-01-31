@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
 import Footer from '../component/Footer'
-import ServiceHero from '../component/Service/ServiceHero'
-import Navbar from '../component/Navbar'
-import ServiceLayout from '../component/Service/ServiceLayout'
-export default function Service() {
+import Header from '../component/Header'
+import FeatureHero from '../component/Feature/FeatureHero'
+import FeatureLayout from '../component/Feature/FeatureLayout'
+export default function Feature() {
     const [mode,setmode]=useState(false)
     const id=document.getElementById("theme")
     const Mode=()=>{
@@ -24,9 +24,9 @@ export default function Service() {
   </label>
 </div>
     <div class="page-wrapper ">
-<Navbar/>
-<ServiceHero/>
-<ServiceLayout/>
+<Header/>
+<FeatureHero/>
+<FeatureLayout/>
 <Footer/>
 <a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
 

@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
 import Footer from '../component/Footer'
-import ServiceHero from '../component/Service/ServiceHero'
 import Navbar from '../component/Navbar'
-import ServiceLayout from '../component/Service/ServiceLayout'
-export default function Service() {
+import SearchLocationHero from '../component/SearchByLocation/SearchLocationHero'
+import SearchLocationLayout from '../component/SearchByLocation/SearchLocationLayout'
+export default function SearchLoaction() {
     const [mode,setmode]=useState(false)
     const id=document.getElementById("theme")
     const Mode=()=>{
@@ -25,8 +25,8 @@ export default function Service() {
 </div>
     <div class="page-wrapper ">
 <Navbar/>
-<ServiceHero/>
-<ServiceLayout/>
+<SearchLocationHero/>
+<SearchLocationLayout/>
 <Footer/>
 <a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
 

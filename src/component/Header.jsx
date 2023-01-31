@@ -108,9 +108,9 @@ function Header() {
                   <a href="#">Pages</a>
                   <ul className="sub-menu list-style">
                     <li><a href="about.html">About us</a></li>
-                    <li><a href="feature.html">Feature Item</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="search-location.html">Search By Location</a></li>
+                    <li><NavLink to="/Feature">Feature Item</NavLink></li>
+                    <li><NavLink to="/Gellery">Gallery</NavLink></li>
+                    <li><NavLink to="/SearchLocation">Search By Location</NavLink></li>
                     <li><a href="reservation.html">Make Reservation</a></li>
                     <li><a href="app.html">Our App</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>

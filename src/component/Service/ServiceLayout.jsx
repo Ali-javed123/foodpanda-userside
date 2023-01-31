@@ -5,8 +5,7 @@ import OurServices from '../Home/HomeComponent.jsx/OurServices'
 export default function ServiceLayout() {
   return (
     <>
-    <OurServices/>
-    <NewsLetter/>
+    
     </>
   )
 }
