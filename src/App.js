@@ -10,6 +10,18 @@ import About from './pages/About';
 import Feature from './pages/Feature';
 import Gellery from './pages/Gellery';
 import SearchLoaction from './pages/SearchLocation';
+import Reservation from './pages/Reservation';
+import OurApp from './pages/OurApp';
+import Testimonials from '../src/pages/Testimoniels';
+import Faq from './pages/Faq';  
+import Login from './pages/Login';
+import Register from './pages/Resgister';
+import ForgetPassword from './pages/ForgetPassword';
+import PrivicyPolicy from './pages/PrivicyPolicy';
+import ShopRight from './pages/ShopRight';
+import ShopLeft from './pages/ShopLeft';
+import TermCondition from './pages/TermCondition';
+import ShopGird from './pages/ShopGird';
 function App() {
   return (
     <div className="App">
@@ -17,6 +29,29 @@ function App() {
           <Routes>
 
             <Route exact path="/" element={< Home />}></Route>
+            <Route exact path="/ShopGird" element={<ShopGird />}></Route>
+
+            <Route exact path="/ShopLeft" element={< ShopLeft />}></Route>
+            <Route exact path="/ShopRight" element={< ShopRight />}></Route>
+
+            <Route exact path="/TermCondition" element={< TermCondition />}></Route>
+
+            <Route exact path="/PrivicyPolicy" element={< PrivicyPolicy />}></Route>
+
+            <Route exact path="/ForgetPassoword" element={< ForgetPassword />}></Route>
+
+            <Route exact path="/Register" element={< Register />}></Route>
+
+            <Route exact path="/Login" element={< Login />}></Route>
+
+            <Route exact path="/Faq" element={< Faq />}></Route>
+
+            <Route exact path="/Testimoniels" element={< Testimonials />}></Route>
+
+            <Route exact path="/OurApp" element={< OurApp />}></Route>
+
+            <Route exact path="/Reservation" element={< Reservation />}></Route>
+
             <Route exact path="/SearchLocation" element={< SearchLoaction />}></Route>
 
             <Route exact path="/Gellery" element={< Gellery />}></Route>

@@ -115,25 +115,26 @@ export default function Navbar() {
                     <li><NavLink to="/Gellery">Gallery</NavLink></li>
                     <li><NavLink to="/SearchLocation">Search By Location</NavLink></li>
 
-                    <li><a href="reservation.html">Make Reservation</a></li>
-                    <li><a href="app.html">Our App</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><NavLink to="/Reservation">Make Reservation</NavLink></li>
+
+                    <li><NavLink to="/OurApp">Our App</NavLink></li>
+                    <li><NavLink to="/Testimoniels">Testimonials</NavLink></li>
+                    <li><NavLink to="/Faq">FAQ</NavLink></li>
                     <li className="has-children"><a href="#">User</a>
                       <ul className="sub-menu list-style">
                         <li>
-                          <a href="login.html">Login</a>
+                          <NavLink to="/Login">Login</NavLink>
                         </li>
                         <li>
-                          <a href="register.html">Register</a>
+                          <NavLink to="/Register">Register</NavLink>
                         </li>
                         <li>
-                          <a href="forgot-pwd.html">Forgot Password</a>
+                          <NavLink to="/ForgetPassoword">Forgot Password</NavLink>
                         </li>
                       </ul>
                     </li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+                    <li><NavLink to="/PrivicyPolicy">Privacy Policy</NavLink></li>
+                    <li><NavLink to="/TermCondition">Terms &amp; Conditions</NavLink></li>
                     <li><a href="404.html">404 Error</a></li>
                   </ul>
                 </li>
@@ -143,13 +144,13 @@ export default function Navbar() {
                       <a href="#">Shop Layout</a>
                       <ul className="sub-menu list-style">
                         <li>
-                          <a href="shop-left-sidebar.html">Shop Left Sidebar</a>
+                          <NavLink to="/ShopLeft">Shop Left Sidebar</NavLink>
                         </li>
                         <li>
-                          <a href="shop-right-sidebar.html">Shop Right Sidebar</a>
+                          <NavLink to="/ShopRight">Shop Right Sidebar</NavLink>
                         </li>
                         <li>
-                          <a href="shop-no-sidebar.html">Shop Grid</a>
+                          <NavLink to="/ShopGird">Shop Grid</NavLink>
                         </li>
                       </ul>
                     </li>

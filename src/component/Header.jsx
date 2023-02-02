@@ -111,7 +111,7 @@ function Header() {
                     <li><NavLink to="/Feature">Feature Item</NavLink></li>
                     <li><NavLink to="/Gellery">Gallery</NavLink></li>
                     <li><NavLink to="/SearchLocation">Search By Location</NavLink></li>
-                    <li><a href="reservation.html">Make Reservation</a></li>
+                    <li><NavLink to="/Reservation">Make Reservation</NavLink></li>
                     <li><a href="app.html">Our App</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="faq.html">FAQ</a></li>

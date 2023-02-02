@@ -1,10 +1,9 @@
 import React,{useState} from 'react'
 import Footer from '../component/Footer'
-import Header from '../component/Header'
-import FeatureHero from '../component/Feature/FeatureHero'
-import FeatureLayout from '../component/Feature/FeatureLayout'
 import Navbar from '../component/Navbar'
-export default function Feature() {
+import ShopLetLayout from '../component/ShopLeft/ShopLetLayout'
+import ShopLeftHero from '../component/ShopLeft/ShopLeftHero'
+export default function ShopLeft() {
     const [mode,setmode]=useState(false)
     const id=document.getElementById("theme")
     const Mode=()=>{
@@ -26,8 +25,8 @@ export default function Feature() {
 </div>
     <div class="page-wrapper ">
 <Navbar/>
-<FeatureHero/>
-<FeatureLayout/>
+<ShopLeftHero/>
+<ShopLetLayout/>
 <Footer/>
 <a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
 

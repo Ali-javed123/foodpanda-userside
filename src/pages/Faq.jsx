@@ -1,10 +1,9 @@
 import React,{useState} from 'react'
 import Footer from '../component/Footer'
-import Header from '../component/Header'
-import FeatureHero from '../component/Feature/FeatureHero'
-import FeatureLayout from '../component/Feature/FeatureLayout'
+import FaqHero from '../component/Faq/FaqHero'
+import FaqLayout from '../component/Faq/FaqLayout'
 import Navbar from '../component/Navbar'
-export default function Feature() {
+export default function Faq() {
     const [mode,setmode]=useState(false)
     const id=document.getElementById("theme")
     const Mode=()=>{
@@ -26,8 +25,9 @@ export default function Feature() {
 </div>
     <div class="page-wrapper ">
 <Navbar/>
-<FeatureHero/>
-<FeatureLayout/>
+<FaqHero/>
+<FaqLayout/>
+
 <Footer/>
 <a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
 
