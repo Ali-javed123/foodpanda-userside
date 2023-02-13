@@ -22,14 +22,22 @@ import ShopRight from './pages/ShopRight';
 import ShopLeft from './pages/ShopLeft';
 import TermCondition from './pages/TermCondition';
 import ShopGird from './pages/ShopGird';
+import { createContext } from 'react';
+import ShopSingle from './pages/ShopSingle';
+const FirstName=createContext()
+const LastName=createContext()
 function App() {
   return (
+<FirstName.Provider value={"ali"}>
+<LastName.Provider value={"javed"}>
+
     <div className="App">
      <Router>
           <Routes>
 
             <Route exact path="/" element={< Home />}></Route>
             <Route exact path="/ShopGird" element={<ShopGird />}></Route>
+            <Route exact path="/ShopSingle" element={<ShopSingle />}></Route>
 
             <Route exact path="/ShopLeft" element={< ShopLeft />}></Route>
             <Route exact path="/ShopRight" element={< ShopRight />}></Route>
@@ -75,7 +83,11 @@ function App() {
           </Routes>
         </Router>
     </div>
+</LastName.Provider>
+</FirstName.Provider>
   );
 }
 
 export default App;
+export {FirstName};
+export {LastName};

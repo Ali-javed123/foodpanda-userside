@@ -155,7 +155,7 @@ export default function Navbar() {
                       </ul>
                     </li>
                     <li>
-                      <a href="shop-details.html">Shop Single</a>
+                      <NavLink to="/ShopSingle">Shop Single</NavLink>
                     </li>
                     <li>
                       <a href="cart.html">Cart</a>
