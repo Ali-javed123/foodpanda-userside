@@ -2,13 +2,30 @@ import React, { useEffect ,useState} from 'react'
 import Slider from "react-slick";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Thumbs } from 'swiper';
+import { Carousel } from 'react-responsive-carousel';
+import productImages from '../../../img';
 export default function SingleCrousel() {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
       const [Nav, SetNav] = useState({
         nav1: null,
         nav2: null,
       });
-
+      const settings = {
+        customPaging: function(i) {
+          return (
+            <a>
+              <img src={`assets/img/feature/single-product-1.png${i + 1}.jpg`} />
+            </a>
+          );
+        },
+        dots: true,
+        dotsClass: "slick-dots slick-thumb",
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
+      
     //   useEffect=(()=>{
     //     SetNav({
     //         nav1: slider1,
@@ -18,45 +35,26 @@ export default function SingleCrousel() {
       
   return (
     <>
-{/* <section className="product-details-wrap pt-100">
+<section className="product-details-wrap pt-100">
   <div className="container">
     <div className="row gx-5 ">
       <div className="col-lg-6">
-        <div className="swiper-container mySwiper2 single-product-slider">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
-              <img src="assets/img/feature/single-product-1.png" />
-            </div>
-            <div className="swiper-slide">
-              <img src="assets/img/feature/single-product-2.png" />
-            </div>
-            <div className="swiper-slide">
-              <img src="assets/img/feature/single-product-3.png" />
-            </div>
-            <div className="swiper-slide">
-              <img src="assets/img/feature/single-product-4.png" />
-            </div>
-          </div>
-        </div>
-        <div thumbsslider className="swiper-container mySwiper single-product-thumbs">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
-              <img src="assets/img/feature/single-product-1.png" />
-            </div>
-            <div className="swiper-slide">
-              <img src="assets/img/feature/single-product-2.png" />
-            </div>
-            <div className="swiper-slide">
-              <img src="assets/img/feature/single-product-3.png" />
-            </div>
-            <div className="swiper-slide">
-              <img src="assets/img/feature/single-product-4.png" />
-            </div>
-          </div>
-          <div className="product-slider-next slider-btn style2"><i className="flaticon-right-arrow-angle" /></div>
-          <div className="product-slider-prev slider-btn style2"><i className="flaticon-left-arrow-1" />
-          </div>
-        </div>
+      <div className='carousel-wrappe'>
+<Carousel infiniteLoop useKeyboardArrows autoPlay>
+                <div>
+                    <img src="assets/img/feature/single-product-1.png" />
+                </div>
+                <div>
+                    <img src="assets/img/feature/single-product-2.png" />
+                </div>
+                <div>
+                    <img src="assets/img/feature/single-product-3.png" />
+                </div>
+                <div>
+                    <img src="assets/img/feature/single-product-4.png" />
+                </div>
+            </Carousel>
+</div>
       </div>
       <div className="col-lg-6">
         <div className="single-product-details">
@@ -274,61 +272,10 @@ export default function SingleCrousel() {
       </div>
     </div>
   </div>
-</section> */}
+</section> 
 
 
-{/* 
-<h2>Slider Syncing (AsNavFor)</h2>        <h4>First Slider</h4>        <Slider
-          asNavFor={Nav.nav2}
-          ref={slider => (Nav.nav1 = slider)}
-        >
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
-        <h4>Second Slider</h4>
-        <Slider
-          asNavFor={Nav.nav1}
-          ref={slider => (Nav.nav2 = slider)}
-          slidesToShow={3}
-          swipeToSlide={true}
-          focusOnSelect={true}
-        >
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider> */}
-             
+
             </>
 
   )
