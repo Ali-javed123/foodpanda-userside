@@ -24,6 +24,10 @@ import TermCondition from './pages/TermCondition';
 import ShopGird from './pages/ShopGird';
 import { createContext } from 'react';
 import ShopSingle from './pages/ShopSingle';
+import Cart from './pages/Cart'
+import WhistList from './pages/WhistList';
+import ContactUs from './pages/ContactUs';
+import Checkout from './pages/Checkout';
 const FirstName=createContext()
 const LastName=createContext()
 function App() {
@@ -34,8 +38,16 @@ function App() {
     <div className="App">
      <Router>
           <Routes>
+          <Route exact path="/Checkout" element={<Checkout/>}></Route>
 
-            <Route exact path="/" element={< Home />}></Route>
+          <Route exact path="/ContactUs" element={<ContactUs/>}></Route>
+          <Route exact path="/Cart" element={<Cart/>}></Route>
+
+
+          <Route exact path="/" element={< Home />}></Route>
+            <Route exact path="/WhistList" element={< WhistList />}></Route>
+            <Route exact path="/ShopGird" element={<ShopGird />}></Route>
+
             <Route exact path="/ShopGird" element={<ShopGird />}></Route>
             <Route exact path="/ShopSingle" element={<ShopSingle />}></Route>
 

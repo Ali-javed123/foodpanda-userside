@@ -59,9 +59,9 @@ export default function SingleCrousel() {
       <div className="col-lg-6">
         <div className="single-product-details">
           <div className="single-product-title">
-            <h2>Chicken In Teriyaki</h2>
+            <h2 className='text-start'>Chicken In Teriyaki</h2>
             <div className="product-ratings">
-              <ul className="ratings list-style">
+              <ul className="ratings list-style text-start">
                 <li> <i className="flaticon-star-1" /> </li>
                 <li> <i className="flaticon-star-1" /> </li>
                 <li> <i className="flaticon-star-1" /> </li>
@@ -73,7 +73,7 @@ export default function SingleCrousel() {
             <h3><span>$39</span> <span className="discount">$45</span></h3>
           </div>
           <div className="single-product-desc">
-            <p>
+            <p className='text-start'>
               Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Ipsum non facilis
               corporis modi consequatur. Iure perferendis dicta illum deleniti veritatis vero.
             </p>
@@ -135,7 +135,7 @@ export default function SingleCrousel() {
         <div className="tab-content product-tab-content">
           <div className="tab-pane fade show active" id="tab_1" role="tabpanel">
             <div className="product_desc">
-              <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Ipsum non facilis
+              <p className='text-start'>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Ipsum non facilis
                 corporis modi consequatur. Iure perferendis dicta illum deleniti veritatis
                 vero tempora maxime ducimus quaerat, iusto omnis magni doloribus. Repellat
                 exercitationem odio rerum doloremque quod, enim iste doloribus fugit
@@ -171,8 +171,8 @@ export default function SingleCrousel() {
                       <div className="row align-items-start">
                         <div className="col-md-8 col-sm-8 col-12">
                           <div className="comment-author-name">
-                            <h5>Stefen Bradely</h5>
-                            <ul className="ratings list-style">
+                            <h5 className='text-start'>Stefen Bradely</h5>
+                            <ul className="ratings list-style text-start">
                               <li> <i className="flaticon-star-1" /> </li>
                               <li> <i className="flaticon-star-1" /> </li>
                               <li> <i className="flaticon-star-1" /> </li>
@@ -183,7 +183,7 @@ export default function SingleCrousel() {
                         </div>
                         <div className="col-md-12 col-sm-12 col-12">
                           <div className="comment-text">
-                            <p>Lorem ipsum dolor sit amet, consetetur
+                            <p className='text-start'>Lorem ipsum dolor sit amet, consetetur
                               sadipscing elitr, sed
                               diam nonumy eirmod tempor invidunt ut labore
                               et dolore magna Lorem ipsum, dolor sit amet
@@ -205,9 +205,9 @@ export default function SingleCrousel() {
                       <div className="row align-items-start">
                         <div className="col-md-8 col-sm-8 col-12">
                           <div className="comment-author-name">
-                            <h5>
+                            <h5 className='text-start'>
                               Jonathan Miller</h5>
-                            <ul className="ratings list-style">
+                            <ul className="ratings list-style text-start">
                               <li> <i className="flaticon-star-1" /> </li>
                               <li> <i className="flaticon-star-1" /> </li>
                               <li> <i className="flaticon-star-1" /> </li>

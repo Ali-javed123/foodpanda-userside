@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function CartHero() {
+export default function WhistlistHero() {
   return (
     <>
 <div className="breadcrumb-wrap bg-f br-1">
@@ -11,17 +11,18 @@ export default function CartHero() {
     <div className="row">
       <div className="col-xl-12">
         <div className="breadcrumb-title">
-          <h2>Cart</h2>
+          <h2>Wishlist</h2>
           <ul className="breadcrumb-menu list-style">
             <li><a href="index.html">Home </a></li>
-            <li>Cart</li>
+            <li>Wishlist</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </div>
-   
+
+
     </>
   )
 }

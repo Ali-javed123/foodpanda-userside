@@ -158,17 +158,19 @@ export default function Navbar() {
                       <NavLink to="/ShopSingle">Shop Single</NavLink>
                     </li>
                     <li>
-                      <a href="cart.html">Cart</a>
+                      <NavLink to="/Cart">Cart</NavLink>
                     </li>
                     <li>
-                      <a href="wishlist.html">Wishlist</a>
+                    
+                      <NavLink to="/WhistList">Wishlist</NavLink>
                     </li>
                     <li>
-                      <a href="checkout.html">Checkout</a>
+                    <NavLink to="/Checkout">Checkout</NavLink>
+
                     </li>
                   </ul>
                 </li>
-                <li className="has-children">
+                {/* <li className="has-children">
                   <a href="#">Blog</a>
                   <ul className="sub-menu list-style">
                     <li className="has-children"><a href="#">Blog Layout</a>
@@ -190,9 +192,9 @@ export default function Navbar() {
                       </ul>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li>
-                  <a href="contact.html">Contact</a>
+                  <NavLink to="/ContactUs">ContactUS</NavLink>
                 </li>
               </ul>
             </div>
