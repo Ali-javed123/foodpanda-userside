@@ -1,6 +1,73 @@
-import React from 'react'
-
+import axios from 'axios';
+import { FastField, Form, Formik } from 'formik';
+import React from 'react';
+import { useNavigate } from "react-router-dom";
+import * as Yup from "yup";
+import BaseUrl from '../../config/BaseUrl';
+import { Notification } from '../../config/Notification';
 export default function LoginLayout() {
+  const navigate = useNavigate()
+  const initialValues = {
+
+    email: '',
+    password: '',
+
+  }
+  const onSubmit = async (values) => {
+    console.log("onSubmit vlaues", values)
+    // setLoad(true);
+    try {
+      var formdata = new FormData();
+      formdata.append("email", values.email);
+      formdata.append("password", values.password);
+      const response = await axios.post(`${BaseUrl.baseUrl}/login`, formdata)
+      const { data } = response
+      const { message, status, token } = data
+
+      console.log(message, status ,token,data)
+      if (status === true) {
+        localStorage.setItem('token', token);
+        Notification('success', message)
+
+      navigate("/")
+        // setShow(false);
+        //       Total("")
+        // token.id("")
+        // PaymentMethodType("")
+        // Tab("")
+        // uid("")
+        // sharepointType("")
+      } else if (status === false) {
+
+        // setShow(false);
+
+        Notification('error', message)
+
+      }
+
+
+
+    } catch (error) {
+      // handleClose()
+
+      //   setLoad(false)
+      console.log(error)
+      Notification('error', error.message)
+
+    }
+  }
+  const validationSchema = Yup.object({
+
+    password: Yup.string()
+      .min(8, 'password must be minimum 8!')
+      .max(15, 'password must be maximum 15!')
+      .required('password is Required!'),
+
+    email: Yup.string().email('Invalid email format').required('Email is Required!'),
+
+
+
+  })
   return (
     <>
 <section className="login-wrap pt-100 pb-100">
@@ -9,23 +76,30 @@ export default function LoginLayout() {
   <div className="container">
     <div className="row">
       <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-8 offset-md-2">
+    
         <div className="login-form">
           <div className="login-header bg-green">
             <h2 className="text-center mb-0">Login</h2>
           </div>
           <div className="login-body">
-            <form className="form-wrap" action="#">
+            <Formik   
+              onSubmit={onSubmit}
+                validationSchema={validationSchema}
+                initialValues={initialValues}
+                >
+
+            <Form className="form-wrap" action="#">
               <div className="row">
                 <div className="col-lg-12">
                   <div className="form-group">
                     <label htmlFor="email">Username/Email/Phone</label>
-                    <input id="email" name="email" type="email" placeholder="Email Address*" required />
+                    <FastField id="email" name="email" type="email" placeholder="Email Address*" required />
                   </div>
                 </div>
                 <div className="col-lg-12">
                   <div className="form-group">
-                    <label htmlFor="pwd">Password</label>
-                    <input id="pwd" name="pwd" type="password" placeholder="Password" />
+                    <label htmlFor="password">Password</label>
+                    <FastField id="password" name="password" type="password" placeholder="Password" />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-12">
@@ -39,7 +113,7 @@ export default function LoginLayout() {
                 </div>
                 <div className="col-lg-12">
                   <div className="form-group">
-                    <button className="btn style1 w-100 d-block">Log In </button>
+                    <button type='submit' className="btn style1 w-100 d-block">Log In </button>
                   </div>
                 </div>
                 <div className="col-lg-12">
@@ -60,9 +134,11 @@ export default function LoginLayout() {
                   <p className="mb-0">Don’t Have an Account? <a className="link style2" href="register.html">Create One</a></p>
                 </div>
               </div>
-            </form>
+            </Form>
+            </Formik>
           </div>
         </div>
+      
       </div>
     </div>
   </div>
