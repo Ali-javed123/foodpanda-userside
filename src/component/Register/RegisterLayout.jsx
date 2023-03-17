@@ -6,13 +6,16 @@ import BaseUrl from '../../config/BaseUrl';
 import { Notification } from '../../config/Notification';
 import axios from 'axios';
 import IconButton from "@material-ui/core/IconButton";
-
+import ReactPhoneInput from "react-phone-input-2";
+import 'react-phone-input-2/lib/style.css';
 export default function RegisterLayout() {
   const [Msg ,SetMsg]=useState("")
 
   const [UpdateThumbnail, setUpdateThumbnail] = useState(null);
   const [Selectedprofile, setSelectedprofile] = useState("");
   const [profileimage, setprofileimage] = useState(null);
+  
+  const [number, Setnumber] = useState("")
   const navigate = useNavigate()
   const initialValues = {
 
@@ -32,23 +35,25 @@ export default function RegisterLayout() {
       var formdata = new FormData();
       formdata.append("firstname",values.fname);
       formdata.append("lastname",values.lname);
-      formdata.append("contactno", );
+      formdata.append("contactno",number );
       formdata.append("email", values.email);
       formdata.append("password",values.password);
       formdata.append("country", "pakistan");
       formdata.append("state", values.state);
       formdata.append("city", values.city);
       formdata.append("profile", profileimage);
-      const response = await axios.post(`${BaseUrl.baseUrl}/login`, formdata)
+      const response = await axios.post(`${BaseUrl.baseUrl}/SignupUser`, formdata)
       const { data } = response
-      const { message, status, token } = data
+      const { message, status, token, custumer} = data
 
       console.log(message, status ,token,data)
       if (status === true) {
         localStorage.setItem('token', token);
+        localStorage.setItem('custumer', custumer);
+
         Notification('success', message)
 
-      navigate("/")
+      navigate("/Login")
         // setShow(false);
         //       Total("")
         // token.id("")
@@ -123,6 +128,11 @@ export default function RegisterLayout() {
 
       func(event.target.files[0]);
     }
+  };
+  const handleOnChange = (args) => {
+    Setnumber(args);
+    console.log("number", number)
+
   };
   return (
     <>
@@ -250,7 +260,16 @@ export default function RegisterLayout() {
                       </div>
                 <div className="col-lg-6">
                   <div className="form-group">
-                    <button className="btn style1 w-100 d-block">Register</button>
+                    {/* <button className="btn style1 w-100 d-block">Register</button> */}
+                    <ReactPhoneInput
+                                        style={{ backgroundColor: "transparent",width:"100% !important" }}  value={number} onChange={handleOnChange}
+                                        defaultCountry="nl" enableSearchField />
+                  </div>
+                </div>
+                <div className="col-lg-6 justify-content-center">
+                  <div className="form-group">
+                    <button type='submit' className="btn style1 w-100 d-block">Register</button>
+              
                   </div>
                 </div>
                 <div className="col-lg-12">

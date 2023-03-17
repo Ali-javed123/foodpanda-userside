@@ -22,11 +22,13 @@ export default function LoginLayout() {
       formdata.append("password", values.password);
       const response = await axios.post(`${BaseUrl.baseUrl}/login`, formdata)
       const { data } = response
-      const { message, status, token } = data
+      const { message, status, token,custumer } = data
 
       console.log(message, status ,token,data)
       if (status === true) {
         localStorage.setItem('token', token);
+        localStorage.setItem('custumer', custumer);
+
         Notification('success', message)
 
       navigate("/")

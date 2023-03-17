@@ -26,6 +26,7 @@
     "slick-carousel": "^1.8.1",
     "swiper": "^8.4.6",
     "web-vitals": "^2.1.4",
+    "react-phone-input-2": "^2.15.1",
     "yup": "^1.0.2"
   },
   "scripts": {

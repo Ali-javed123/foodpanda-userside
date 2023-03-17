@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function OurBlog() {
+  
   return (
     <>
 <section className="blog-wrap pt-100 pb-75 td-cod">
