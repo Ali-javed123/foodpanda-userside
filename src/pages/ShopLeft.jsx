@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Footer from '../component/Footer'
 import Navbar from '../component/Navbar'
-import ShopLetLayout from '../component/ShopLeft/ShopLetLayout'
+import ShopLetLayout from '../component/ShopLeft/ShopLetLayout.1'
 import ShopLeftHero from '../component/ShopLeft/ShopLeftHero'
 export default function ShopLeft() {
     const [mode,setmode]=useState(false)
@@ -25,10 +25,12 @@ export default function ShopLeft() {
 </div>
     <div class="page-wrapper ">
 <Navbar/>
+<div class="content-wrapper">
+
 <ShopLeftHero/>
 <ShopLetLayout/>
+</div>
 <Footer/>
-<a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
 
 
     </div>

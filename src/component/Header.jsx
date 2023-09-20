@@ -112,9 +112,9 @@ function Header() {
                     <li><NavLink to="/Gellery">Gallery</NavLink></li>
                     <li><NavLink to="/SearchLocation">Search By Location</NavLink></li>
                     <li><NavLink to="/Reservation">Make Reservation</NavLink></li>
-                    <li><a href="app.html">Our App</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><NavLink to="/OurApp">Our App</NavLink></li>
+                    <li><NavLink to="/Testimoniels">Testimonials</NavLink></li>
+                    <li><NavLink to="/Faq">FAQ</NavLink></li>
                     <li className="has-children"><a href="#">User</a>
                       <ul className="sub-menu list-style">
                         <li>

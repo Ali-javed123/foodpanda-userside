@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Footer from '../component/Footer'
 import Header from '../component/Header'
+import Navbar from '../component/Navbar'
 import HomeHero from '../component/Home/HomeHero'
 import HomeLayout from '../component/Home/HomeLayout'
 export default function Home() {
@@ -24,11 +25,13 @@ export default function Home() {
   </label>
 </div>
     <div class="page-wrapper ">
-<Header/>
+    <Navbar/>
+<div class="content-wrapper">
+
 <HomeHero/>
 <HomeLayout/>
+</div>
 <Footer/>
-<a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
 
 
     </div>

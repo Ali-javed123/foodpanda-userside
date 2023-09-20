@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 export default function OurServices() {
   return (
     <>
@@ -23,7 +23,7 @@ export default function OurServices() {
                 <img src="assets/img/service/breakfast.png" alt="Image" />
               </div>
               <div className="service-info">
-                <h3 className="service-title"><a href="service-details.html">Breakfast</a></h3>
+                <h3 className="service-title"><Link to="/ServiceDetail">Breakfast</Link></h3>
                 <p>Lorem ipsum dolor sit amet, tetur
                   piscing elit. Suspendisse smod
                   congue bibendum.</p>
@@ -34,7 +34,7 @@ export default function OurServices() {
                 <img src="assets/img/service/lunch.png" alt="Image" />
               </div>
               <div className="service-info">
-                <h3 className="service-title"><a href="service-details.html">Lunch</a></h3>
+                <h3 className="service-title"><Link to="/ServiceDetail">Lunch</Link></h3>
                 <p>Lorem ipsum dolor sit amet, tetur
                   piscing elit. Suspendisse smod
                   congue bibendum.</p>
@@ -45,7 +45,7 @@ export default function OurServices() {
                 <img src="assets/img/service/dinner.png" alt="Image" />
               </div>
               <div className="service-info">
-                <h3 className="service-title"><a href="service-details.html">Dinner</a></h3>
+                <h3 className="service-title"><Link to="/ServiceDetail">Dinner</Link></h3>
                 <p>Lorem ipsum dolor sit amet, tetur
                   piscing elit. Suspendisse smod
                   congue bibendum.</p>
@@ -56,7 +56,7 @@ export default function OurServices() {
                 <img src="assets/img/service/custom.png" alt="Image" />
               </div>
               <div className="service-info">
-                <h3 className="service-title"><a href="service-details.html">Custom</a></h3>
+                <h3 className="service-title"><Link to="/ServiceDetail">Custom</Link></h3>
                 <p>Lorem ipsum dolor sit amet, tetur
                   piscing elit. Suspendisse smod
                   congue bibendum.</p>

@@ -25,10 +25,12 @@ export default function ServiceDetail() {
 </div>
     <div class="page-wrapper ">
 <Navbar/>
+<div class="content-wrapper">
+
 <ServiceDetailHero/>
 <ServiceDetailLayout/>
+</div>
 <Footer/>
-<a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
 
 
     </div>

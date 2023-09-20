@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
+import { NavLink } from 'react-router-dom';
 // import required modules
 import { Autoplay, Pagination ,Navigation} from "swiper";
 export default function OurFeature() {
@@ -25,8 +25,8 @@ export default function OurFeature() {
         </div>
       </div>
       <div className="col-lg-4 text-lg-end md-none">
-        <a href="feature.html" className="btn style1">View More Item <i className="flaticon-right-arrow-2" />
-        </a>
+        <NavLink to="/Feature" className="btn style1">View More Item <i className="flaticon-right-arrow-2" />
+        </NavLink>
       </div>
     </div>
   </div>
@@ -66,7 +66,7 @@ export default function OurFeature() {
                   <img src="assets/img/feature/feature-item-1.jpg" alt="Image" />
                 </div>
                 <div className="feature-info">
-                  <h3 className="feature-title"><a href="shop-details.html">Chicken In Teriyaki</a>
+                  <h3 className="feature-title"><NavLink to="/ServiceDetail">Chicken In Teriyaki</NavLink>
                   </h3>
                   <div className="feature-meta">
                     <p className="feature-price">22.35$ <span>30.50$</span></p>
@@ -75,7 +75,7 @@ export default function OurFeature() {
                       <span>4.9</span>
                     </div>
                   </div>
-                  <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                  <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                   <div className="discount-tag">
                     <img src="assets/img/feature/circle-1.png" alt="Image" />
                     <p> <span>Save</span>
@@ -90,7 +90,7 @@ export default function OurFeature() {
                   <img src="assets/img/feature/feature-item-2.jpg" alt="Image" />
                 </div>
                 <div className="feature-info">
-                  <h3 className="feature-title"><a href="shop-details.html">Hotdog With Sausage</a>
+                  <h3 className="feature-title"><NavLink to="/ServiceDetail">Hotdog With Sausage</NavLink>
                   </h3>
                   <div className="feature-meta">
                     <p className="feature-price">30.35$ <span>40.50$</span></p>
@@ -99,7 +99,7 @@ export default function OurFeature() {
                       <span>4.2</span>
                     </div>
                   </div>
-                  <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                  <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                   <div className="discount-tag">
                     <img src="assets/img/feature/circle-1.png" alt="Image" />
                     <p> <span>Save</span>
@@ -114,7 +114,7 @@ export default function OurFeature() {
                   <img src="assets/img/feature/feature-item-3.jpg" alt="Image" />
                 </div>
                 <div className="feature-info">
-                  <h3 className="feature-title"><a href="shop-details.html">Breakfast With Sweet</a>
+                  <h3 className="feature-title"><NavLink to="/ServiceDetail">Breakfast With Sweet</NavLink>
                   </h3>
                   <div className="feature-meta">
                     <p className="feature-price">52.35$ <span>60.50$</span></p>
@@ -123,7 +123,7 @@ export default function OurFeature() {
                       <span>4.5</span>
                     </div>
                   </div>
-                  <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                  <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                   <div className="discount-tag">
                     <img src="assets/img/feature/circle-1.png" alt="Image" />
                     <p> <span>Save</span>
@@ -138,7 +138,7 @@ export default function OurFeature() {
                   <img src="assets/img/feature/feature-item-4.jpg" alt="Image" />
                 </div>
                 <div className="feature-info">
-                  <h3 className="feature-title"><a href="shop-details.html">Grilled Chicken Stick</a>
+                  <h3 className="feature-title"><NavLink to="/ServiceDetail">Grilled Chicken Stick</NavLink>
                   </h3>
                   <div className="feature-meta">
                     <p className="feature-price">25.35$ <span>30.50$</span></p>
@@ -147,7 +147,7 @@ export default function OurFeature() {
                       <span>4.8</span>
                     </div>
                   </div>
-                  <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                  <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                   <div className="discount-tag">
                     <img src="assets/img/feature/circle-1.png" alt="Image" />
                     <p> <span>Save</span>
@@ -162,7 +162,7 @@ export default function OurFeature() {
                   <img src="assets/img/feature/feature-item-5.jpg" alt="Image" />
                 </div>
                 <div className="feature-info">
-                  <h3 className="feature-title"><a href="shop-details.html">Chicken Barista platter</a>
+                  <h3 className="feature-title"><NavLink to="/ServiceDetail">Chicken Barista platter</NavLink>
                   </h3>
                   <div className="feature-meta">
                     <p className="feature-price">32.35$ <span>45.50$</span></p>
@@ -171,7 +171,7 @@ export default function OurFeature() {
                       <span>4.9</span>
                     </div>
                   </div>
-                  <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                  <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                   <div className="discount-tag">
                     <img src="assets/img/feature/circle-1.png" alt="Image" />
                     <p> <span>Save</span>
@@ -186,7 +186,7 @@ export default function OurFeature() {
                   <img src="assets/img/feature/feature-item-6.jpg" alt="Image" />
                 </div>
                 <div className="feature-info">
-                  <h3 className="feature-title"><a href="shop-details.html">French Fries Pack</a></h3>
+                  <h3 className="feature-title"><NavLink to="/ServiceDetail">French Fries Pack</NavLink></h3>
                   <div className="feature-meta">
                     <p className="feature-price">15.35$ <span>20.50$</span></p>
                     <div className="ratings">
@@ -194,7 +194,7 @@ export default function OurFeature() {
                       <span>4.4</span>
                     </div>
                   </div>
-                  <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                  <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                   <div className="discount-tag">
                     <img src="assets/img/feature/circle-1.png" alt="Image" />
                     <p> <span>Save</span>
@@ -212,8 +212,8 @@ export default function OurFeature() {
     <div className="feature-pagination" />
   </div>
   <div className="container mt-30 text-center xl-none">
-    <a href="feature.html" className="btn style1">View More Item <i className="flaticon-right-arrow-2" />
-    </a>
+    <NavLink to="/Feature" className="btn style1">View More Item <i className="flaticon-right-arrow-2" />
+    </NavLink>
   </div>
 </section>
 

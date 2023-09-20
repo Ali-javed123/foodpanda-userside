@@ -40,7 +40,7 @@ const [thumbsSwiper, setThumbsSwiper] = useState(null);
         modules={[Autoplay, Pagination, Navigation]}
          className="mySwiper2 testimonial-slider-two">
             <SwiperSlide>
-              <div className="testimonial-item style2">
+              <div className="testimonial-item style2 mb-5">
                 <div className="quote-icon">
                   <i className="flaticon-right-quote-sign" />
                 </div>
@@ -69,7 +69,7 @@ const [thumbsSwiper, setThumbsSwiper] = useState(null);
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="testimonial-item style2">
+              <div className="testimonial-item style2 mb-5">
                 <div className="quote-icon">
                   <i className="flaticon-right-quote-sign" />
                 </div>
@@ -98,7 +98,7 @@ const [thumbsSwiper, setThumbsSwiper] = useState(null);
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="testimonial-item style2">
+              <div className="testimonial-item style2 mb-5">
                 <div className="quote-icon">
                   <i className="flaticon-right-quote-sign" />
                 </div>
@@ -127,7 +127,7 @@ const [thumbsSwiper, setThumbsSwiper] = useState(null);
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="testimonial-item style2">
+              <div className="testimonial-item style2 mb-5">
                 <div className="quote-icon">
                   <i className="flaticon-right-quote-sign" />
                 </div>
@@ -145,7 +145,7 @@ const [thumbsSwiper, setThumbsSwiper] = useState(null);
                     when."</p>
                 </div>
               </div>
-              <div className="tesstimonial-thumb-one">
+              <div className="tesstimonial-thumb-one mb-5">
                 <div className="client-img">
                   <img src="assets/img/testimonial/client-3.jpg" alt="Image" />
                 </div>

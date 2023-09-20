@@ -25,10 +25,12 @@ export default function Home2() {
 </div>
     <div class="page-wrapper ">
 <Navbar/>
+<div class="content-wrapper">
+
 <LoginHero/>
 <LoginLayout/>
+</div>
 <Footer/>
-<a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
 
 
     </div>

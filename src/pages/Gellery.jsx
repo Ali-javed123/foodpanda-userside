@@ -25,10 +25,12 @@ export default function Gellery() {
 </div>
     <div class="page-wrapper ">
 <Navbar/>
+<div class="content-wrapper">
+
 <GelleryHero/>
 <GelleryLayout/>
+</div>
 <Footer/>
-<a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
 
 
     </div>

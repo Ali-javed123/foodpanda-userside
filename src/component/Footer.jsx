@@ -133,6 +133,8 @@ export default function Footer() {
     </div>
   </div>
 </footer>
+<a href="#" class="back-to-top"><i class="las la-arrow-up"></i></a>
+
 
     </>
   )

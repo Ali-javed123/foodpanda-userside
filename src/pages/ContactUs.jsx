@@ -24,13 +24,13 @@ export default function ContactUs() {
   </label>
 </div>
 <Navbar/>
+
     <div class="content-wrapper">
 <ContactUsHero/>
 <ContactUsLayout/>
 </div>
 <Footer/>
 
-<a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
 
 
 </div>

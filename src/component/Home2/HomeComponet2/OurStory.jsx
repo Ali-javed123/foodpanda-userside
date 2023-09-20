@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 export default function OurStory() {
   return (
     <>
@@ -43,7 +43,7 @@ export default function OurStory() {
                 until you get it.</p>
             </div>
           </div>
-          <a href="about.html" className="btn style1">Read More<i className="flaticon-right-arrow-2" /></a>
+          <NavLink to="/AboutUs" className="btn style1">Read More<i className="flaticon-right-arrow-2" /></NavLink>
         </div>
       </div>
     </div>

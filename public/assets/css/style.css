@@ -6305,7 +6305,7 @@ article h6 {
   border-bottom: none;
   border-left: 1px solid rgba(69, 69, 70, 0.2);
   border-right: 1px solid rgba(69, 69, 70, 0.2);
-  left: 48px;
+  /* left: 48px; */
   position: relative;
   height: 48px;
   top: -1px;

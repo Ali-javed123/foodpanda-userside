@@ -23,16 +23,15 @@ export default function Faq() {
     <span className="slider round" />
   </label>
 </div>
-    <div class="page-wrapper ">
 <Navbar/>
+    <div class="page-wrapper ">
 <FaqHero/>
 <FaqLayout/>
 
-<Footer/>
-<a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
 
 
     </div>
+<Footer/>
 </>
   )
 }

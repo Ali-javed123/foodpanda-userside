@@ -25,6 +25,24 @@ export default function SingleCrousel() {
         slidesToShow: 1,
         slidesToScroll: 1
       };
+
+
+      let [num, setNum]= useState(0);
+      let incNum =()=>{
+        if(num<100)
+        {
+        setNum(Number(num)+1);
+        }
+      };
+      let decNum = () => {
+         if(num>0)
+         {
+          setNum(num - 1);
+         }
+      }
+     let handleChange = (e)=>{
+       setNum(e.target.value);
+      }
       
     //   useEffect=(()=>{
     //     SetNav({
@@ -78,8 +96,8 @@ export default function SingleCrousel() {
               corporis modi consequatur. Iure perferendis dicta illum deleniti veritatis vero.
             </p>
             <ul className="content-feature-list list-style mb-20">
-              <li><i className="las la-check-circle" />4 thick cut pork chops</li>
-              <li><i className="las la-check-circle" />1 tablespoon dried basil
+              <li className='text-start'><i className="las la-check-circle" />4 thick cut pork chops</li>
+              <li className='text-start'><i className="las la-check-circle" />1 tablespoon dried basil
               </li>
             </ul>
           </div>
@@ -92,9 +110,9 @@ export default function SingleCrousel() {
               <h6>Quantity:</h6>
               <div className="product-quantity style1">
                 <div className="qtySelector">
-                  <span className="decreaseQty"><i className="flaticon-left-arrow-1" /></span>
-                  <input type="text" className="qtyValue" defaultValue={1} />
-                  <span className="increaseQty"><i className="flaticon-next" /></span>
+                  <span className="decreaseQty" onClick={decNum}><i className="fa fa-minus" /></span>
+                  <input type="text" className="qtyValue" value={num} />
+                  <span className="increaseQty" onClick={incNum}><i className="fa fa-plus" /></span>
                 </div>
               </div>
             </div>

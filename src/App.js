@@ -39,7 +39,9 @@ function App() {
      <Router>
           <Routes>
           <Route exact path="/Checkout" element={<Checkout/>}></Route>
+          <Route exact path="/Feature" element={<Feature/>}></Route>
 
+          
           <Route exact path="/ContactUs" element={<ContactUs/>}></Route>
           <Route exact path="/Cart" element={<Cart/>}></Route>
 
@@ -48,7 +50,6 @@ function App() {
             <Route exact path="/WhistList" element={< WhistList />}></Route>
             <Route exact path="/ShopGird" element={<ShopGird />}></Route>
 
-            <Route exact path="/ShopGird" element={<ShopGird />}></Route>
             <Route exact path="/ShopSingle" element={<ShopSingle />}></Route>
 
             <Route exact path="/ShopLeft" element={< ShopLeft />}></Route>
@@ -78,7 +79,7 @@ function App() {
 
             <Route exact path="/Feature" element={< Feature />}></Route>
 
-            <Route exact path="/About" element={< About />}></Route>
+            <Route exact path="/AboutUs" element={< About />}></Route>
 
             <Route exact path="/ServiceDetail" element={< ServiceDetail />}></Route>
 
