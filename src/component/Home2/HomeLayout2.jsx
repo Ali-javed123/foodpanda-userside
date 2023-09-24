@@ -8,6 +8,7 @@ import Testimonials from '../Home/HomeComponent/Testimonials'
 import OurApp from '../Home/HomeComponent/OurApp'
 import OurBlog from './HomeComponet2/OurBlog'
 import OurContactUs from './HomeComponet2/OurContactUs'
+import ReservationTable from '../Home3/HomeComponent3/ReservationTable'
 export default function HomeLayout2() {
   return (
     <>
@@ -15,9 +16,10 @@ export default function HomeLayout2() {
     <OurServices/>
     <OurFeature/>
     <Offer/>
-    {/* <Testimonials /> */}
+    <Testimonials />
     <Testimoniel/>
     <OurApp/>
+    <ReservationTable/>
     <OurBlog/>
     <OurContactUs/>
     </>

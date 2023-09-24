@@ -110,7 +110,7 @@ export default function Navbar() {
                 <li className="has-children">
                   <a href="#">Pages</a>
                   <ul className="sub-menu list-style">
-                    <li><NavLink to="/About">About us</NavLink></li>
+                    <li><NavLink to="/AboutUs">About us</NavLink></li>
                     <li><NavLink to="/Feature">Feature Item</NavLink></li>
                     <li><NavLink to="/Gellery">Gallery</NavLink></li>
                     <li><NavLink to="/SearchLocation">Search By Location</NavLink></li>

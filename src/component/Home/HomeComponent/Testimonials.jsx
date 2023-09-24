@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
+import { SwiperButtun } from '../../SwiperButtun';
 // import required modules
 import { Autoplay, Pagination ,Navigation} from "swiper";
 export default function Testimonials() {
@@ -49,7 +49,7 @@ export default function Testimonials() {
           },
         }}
 
-        modules={[Pagination,Autoplay]} 
+        modules={[Autoplay]} 
     className="testimonial-slider-one swiper-container">
               <SwiperSlide>
                 <div className="testimonial-item style1">
@@ -183,6 +183,7 @@ export default function Testimonials() {
                   </div>
                 </div>
               </SwiperSlide>
+              <SwiperButtun/>
           </Swiper>
         </div>
       </div>

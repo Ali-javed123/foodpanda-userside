@@ -93,8 +93,15 @@ input:checked + .slider:before {
   padding-top: 100px;
 }
 
+
 .theme-dark .logo .logo-light {
   display: none !important;
+}
+
+
+
+.theme-dark .ratings span {
+  color: #fff !important;
 }
 
 .theme-dark .logo .logo-dark {

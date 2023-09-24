@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 export default function ShopRightLayout() {
   return (
     <>
@@ -10,7 +10,10 @@ export default function ShopRightLayout() {
         <div className="row align-items-center mb-25">
           <div className="col-xl-6 col-lg-5 col-md-4">
             <div className="profuct-result">
-              <p>Showing 10 of 120 Products</p>
+              {/* <p>Showing 10 of 120 Products</p> */}
+              <NavLink to="/ShopGird"> <i className='fa fa-th' style={{background:"red",color:"#fff",fontSize:"25px",padding:"7px"}}></i></NavLink>
+                   <NavLink to="/ShopRight"><i className='fa fa-list' style={{background:"red",color:"#fff",fontSize:"25px",padding:"7px",marginLeft:"2%"}}></i></NavLink>
+                   <NavLink to="/ShopLeft"><i className='fa fa-th' style={{background:"red",color:"#fff",fontSize:"25px",padding:"7px",marginLeft:"2%"}}></i></NavLink>
             </div>
           </div>
           <div className="col-xl-4 col-lg-4 col-md-4">
@@ -39,7 +42,7 @@ export default function ShopRightLayout() {
                 <img src="assets/img/feature/feature-item-1.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">Chicken In Teriyaki</a>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">Chicken In Teriyaki</NavLink>
                 </h3>
                 <div className="feature-meta">
                   <p className="feature-price">22.35$ <span>30.50$</span></p>
@@ -48,7 +51,7 @@ export default function ShopRightLayout() {
                     <span>4.9</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -63,7 +66,7 @@ export default function ShopRightLayout() {
                 <img src="assets/img/feature/feature-item-2.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">Hotdog With Sausage</a>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">Hotdog With Sausage</NavLink>
                 </h3>
                 <div className="feature-meta">
                   <p className="feature-price">30.35$ <span>40.50$</span></p>
@@ -72,7 +75,7 @@ export default function ShopRightLayout() {
                     <span>4.2</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -87,7 +90,7 @@ export default function ShopRightLayout() {
                 <img src="assets/img/feature/feature-item-3.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">Breakfast With Sweet</a>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">Breakfast With Sweet</NavLink>
                 </h3>
                 <div className="feature-meta">
                   <p className="feature-price">52.35$ <span>60.50$</span></p>
@@ -96,7 +99,7 @@ export default function ShopRightLayout() {
                     <span>4.5</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -111,7 +114,7 @@ export default function ShopRightLayout() {
                 <img src="assets/img/feature/feature-item-4.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">Grilled Chicken Stick</a>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">Grilled Chicken Stick</NavLink>
                 </h3>
                 <div className="feature-meta">
                   <p className="feature-price">25.35$ <span>30.50$</span></p>
@@ -120,7 +123,7 @@ export default function ShopRightLayout() {
                     <span>4.8</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -135,7 +138,7 @@ export default function ShopRightLayout() {
                 <img src="assets/img/feature/feature-item-5.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">Chicken Barista platter</a>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">Chicken Barista platter</NavLink>
                 </h3>
                 <div className="feature-meta">
                   <p className="feature-price">32.35$ <span>45.50$</span></p>
@@ -144,7 +147,7 @@ export default function ShopRightLayout() {
                     <span>4.9</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -159,7 +162,7 @@ export default function ShopRightLayout() {
                 <img src="assets/img/feature/feature-item-6.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">French Fries Pack</a></h3>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">French Fries Pack</NavLink></h3>
                 <div className="feature-meta">
                   <p className="feature-price">15.35$ <span>20.50$</span></p>
                   <div className="ratings">
@@ -167,7 +170,7 @@ export default function ShopRightLayout() {
                     <span>4.4</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -180,17 +183,17 @@ export default function ShopRightLayout() {
         <div className="page-navigation">
           <div className="row align-items-center">
             <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-sm-start text-center smb-20">
-              <a href="shop-left-sidebar.html" className="btn prev">Prev Page</a>
+              <NavLink to="#" className="btn prev">Prev Page</NavLink>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center smb-20">
               <ul className="page-nav list-style">
-                <li><a className="active" href="shop-left-sidebar.html">1</a></li>
-                <li><a href="shop-left-sidebar.html">2</a></li>
-                <li><a href="shop-left-sidebar.html">3</a></li>
+                <li><NavLink to="#" className={"active"}>1</NavLink></li>
+                <li><NavLink to="#">2</NavLink></li>
+                <li><NavLink to="#">3</NavLink></li>
               </ul>
             </div>
             <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-sm-end text-center">
-              <a href="shop-left-sidebar.html" className="btn next">Next Page </a>
+              <NavLink to="#" className="btn next">Next Page </NavLink>
             </div>
           </div>
         </div>
@@ -208,12 +211,12 @@ export default function ShopRightLayout() {
             <h4>Category</h4>
             <div className="category-box">
               <ul className="list-style">
-                <li><a href="shop-left-sidebar.html">Dishes<i className="flaticon-right-arrow-angle" /> </a></li>
-                <li><a href="shop-left-sidebar.html">Nuts &amp; Greens<i className="flaticon-right-arrow-angle" /> </a></li>
-                <li><a href="shop-left-sidebar.html">Smoothies<i className="flaticon-right-arrow-angle" /> </a></li>
-                <li><a href="shop-left-sidebar.html">Vegetables<i className="flaticon-right-arrow-angle" /> </a></li>
-                <li><a href="shop-left-sidebar.html">Takeaway Pack<i className="flaticon-right-arrow-angle" /> </a></li>
-                <li><a href="shop-left-sidebar.html">Fresh Fruits<i className="flaticon-right-arrow-angle" /> </a></li>
+                <li><NavLink to="#">Dishes<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                <li><NavLink to="#">Nuts &amp; Greens<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                <li><NavLink to="#">Smoothies<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                <li><NavLink to="#">Vegetables<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                <li><NavLink to="#">Takeaway Pack<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                <li><NavLink to="#">Fresh Fruits<i className="flaticon-right-arrow-angle" /> </NavLink></li>
               </ul>
             </div>
           </div>
@@ -221,32 +224,32 @@ export default function ShopRightLayout() {
             <h4>New Arrivals</h4>
             <div className="new-product-wrap">
               <div className="new-product-item">
-                <a href="car-details.html" className="new-product-img">
+                <NavLink to="/Cart" className="new-product-img">
                   <img src="assets/img/blog/post-thumb-1.jpg" alt="Iamge" />
-                </a>
+                </NavLink>
                 <div className="new-product-info">
-                  <h6><a href="shop-details.html">Pasta Barista</a></h6>
+                  <h6><NavLink to="/ShopSingle">Pasta Barista</NavLink></h6>
                   <div className="price">
                     <span>$22</span>
                   </div>
                 </div>
               </div>
               <div className="new-product-item">
-                <a href="car-details.html" className="new-product-img">
+                <NavLink to="/Cart" className="new-product-img">
                   <img src="assets/img/blog/post-thumb-3.jpg" alt="Iamge" />
-                </a>
+                </NavLink>
                 <div className="new-product-info">
-                  <h6><a href="shop-details.html">Chicken Sandwitch</a></h6>
+                  <h6><NavLink to="/ShopSingle">Chicken Sandwitch</NavLink></h6>
                   <div className="price"><span>$32</span>
                     <span className="discount">$35</span></div>
                 </div>
               </div>
               <div className="new-product-item">
-                <a href="car-details.html" className="new-product-img">
+                <NavLink to="/Cart" className="new-product-img">
                   <img src="assets/img/blog/post-thumb-2.jpg" alt="Iamge" />
-                </a>
+                </NavLink>
                 <div className="new-product-info">
-                  <h6><a href="car-details.html">Strawberry Salsa</a></h6>
+                  <h6><NavLink to="/Cart">Strawberry Salsa</NavLink></h6>
                   <div className="price"><span>$98</span></div>
                 </div>
               </div>
@@ -296,12 +299,12 @@ export default function ShopRightLayout() {
             <h4>Popular Tags </h4>
             <div className="tag-list">
               <ul className="list-style">
-                <li><a href="blog-left-sidebar.html">Food</a></li>
-                <li><a href="blog-left-sidebar.html">Restaurant</a></li>
-                <li><a href="blog-left-sidebar.html">Health</a></li>
-                <li><a href="blog-left-sidebar.html">Review </a></li>
-                <li><a href="blog-left-sidebar.html">Fastfood</a></li>
-                <li><a href="blog-left-sidebar.html">Business</a></li>
+                <li><NavLink to="#">Food</NavLink></li>
+                <li><NavLink to="#">Restaurant</NavLink></li>
+                <li><NavLink to="#">Health</NavLink></li>
+                <li><NavLink to="#">Review </NavLink></li>
+                <li><NavLink to="#">Fastfood</NavLink></li>
+                <li><NavLink to="#">Business</NavLink></li>
               </ul>
             </div>
           </div>

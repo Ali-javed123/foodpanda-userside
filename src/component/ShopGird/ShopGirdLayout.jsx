@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 export default function ShopGirdLayout() {
   return (
     <>
@@ -10,7 +10,10 @@ export default function ShopGirdLayout() {
         <div className="row align-items-center mb-25">
           <div className="col-xl-6 col-lg-5 col-md-4">
             <div className="profuct-result">
-              <p>Showing 10 of 120 Products</p>
+              {/* <p>Showing 10 of 120 Products</p> */}
+              <NavLink to="/ShopGird"> <i className='fa fa-th' style={{background:"red",color:"#fff",fontSize:"25px",padding:"7px"}}></i></NavLink>
+                   <NavLink to="/ShopRight"><i className='fa fa-list' style={{background:"red",color:"#fff",fontSize:"25px",padding:"7px",marginLeft:"2%"}}></i></NavLink>
+                   <NavLink to="/ShopLeft"><i className='fa fa-th' style={{background:"red",color:"#fff",fontSize:"25px",padding:"7px",marginLeft:"2%"}}></i></NavLink>
             </div>
           </div>
           <div className="col-xl-4 col-lg-4 col-md-4">
@@ -39,7 +42,7 @@ export default function ShopGirdLayout() {
                 <img src="assets/img/feature/feature-item-1.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">Chicken In Teriyaki</a>
+                <h3 className="feature-title"><NavLink to="shop-details.html">Chicken In Teriyaki</NavLink>
                 </h3>
                 <div className="feature-meta">
                   <p className="feature-price">22.35$ <span>30.50$</span></p>

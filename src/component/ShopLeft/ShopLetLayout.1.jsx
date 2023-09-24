@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
 
 export default function ShopLetLayout() {
   return (
@@ -125,8 +125,8 @@ export default function ShopLetLayout() {
                   <div className="profuct-result">
                     {/* <p>Showing 10 of 120 Products</p> */}
                    <NavLink to="/ShopGird"> <i className='fa fa-th' style={{background:"red",color:"#fff",fontSize:"25px",padding:"7px"}}></i></NavLink>
-                    <i className='fa fa-list' style={{background:"red",color:"#fff",fontSize:"25px",padding:"7px",marginLeft:"2%"}}></i>
-                    <i className='fa fa-th' style={{background:"red",color:"#fff",fontSize:"25px",padding:"7px",marginLeft:"2%"}}></i>
+                   <NavLink to="/ShopRight"><i className='fa fa-list' style={{background:"red",color:"#fff",fontSize:"25px",padding:"7px",marginLeft:"2%"}}></i></NavLink>
+                   <NavLink to="/ShopLeft"><i className='fa fa-th' style={{background:"red",color:"#fff",fontSize:"25px",padding:"7px",marginLeft:"2%"}}></i></NavLink>
 
                   </div>
                 </div>
@@ -156,7 +156,7 @@ export default function ShopLetLayout() {
                       <img src="assets/img/feature/feature-item-1.jpg" alt="Image" />
                     </div>
                     <div className="feature-info">
-                      <h3 className="feature-title"><a href="shop-details.html">Chicken In Teriyaki</a>
+                      <h3 className="feature-title"><NavLink to="/ShopSingle">Chicken In Teriyaki</NavLink>
                       </h3>
                       <div className="feature-meta">
                         <p className="feature-price">22.35$ <span>30.50$</span></p>
@@ -165,7 +165,7 @@ export default function ShopLetLayout() {
                           <span>4.9</span>
                         </div>
                       </div>
-                      <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                      <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                       <div className="discount-tag">
                         <img src="assets/img/feature/circle-1.png" alt="Image" />
                         <p> <span>Save</span>
@@ -180,7 +180,7 @@ export default function ShopLetLayout() {
                       <img src="assets/img/feature/feature-item-2.jpg" alt="Image" />
                     </div>
                     <div className="feature-info">
-                      <h3 className="feature-title"><a href="shop-details.html">Hotdog With Sausage</a>
+                      <h3 className="feature-title"><NavLink to="/ShopSingle">Hotdog With Sausage</NavLink>
                       </h3>
                       <div className="feature-meta">
                         <p className="feature-price">30.35$ <span>40.50$</span></p>
@@ -189,7 +189,7 @@ export default function ShopLetLayout() {
                           <span>4.2</span>
                         </div>
                       </div>
-                      <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                      <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                       <div className="discount-tag">
                         <img src="assets/img/feature/circle-1.png" alt="Image" />
                         <p> <span>Save</span>
@@ -204,7 +204,7 @@ export default function ShopLetLayout() {
                       <img src="assets/img/feature/feature-item-3.jpg" alt="Image" />
                     </div>
                     <div className="feature-info">
-                      <h3 className="feature-title"><a href="shop-details.html">Breakfast With Sweet</a>
+                      <h3 className="feature-title"><NavLink to="/ShopSingle">Breakfast With Sweet</NavLink>
                       </h3>
                       <div className="feature-meta">
                         <p className="feature-price">52.35$ <span>60.50$</span></p>
@@ -213,7 +213,7 @@ export default function ShopLetLayout() {
                           <span>4.5</span>
                         </div>
                       </div>
-                      <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                      <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                       <div className="discount-tag">
                         <img src="assets/img/feature/circle-1.png" alt="Image" />
                         <p> <span>Save</span>
@@ -228,7 +228,7 @@ export default function ShopLetLayout() {
                       <img src="assets/img/feature/feature-item-4.jpg" alt="Image" />
                     </div>
                     <div className="feature-info">
-                      <h3 className="feature-title"><a href="shop-details.html">Grilled Chicken Stick</a>
+                      <h3 className="feature-title"><NavLink to="/ShopSingle">Grilled Chicken Stick</NavLink>
                       </h3>
                       <div className="feature-meta">
                         <p className="feature-price">25.35$ <span>30.50$</span></p>
@@ -237,7 +237,7 @@ export default function ShopLetLayout() {
                           <span>4.8</span>
                         </div>
                       </div>
-                      <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                      <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                       <div className="discount-tag">
                         <img src="assets/img/feature/circle-1.png" alt="Image" />
                         <p> <span>Save</span>
@@ -252,7 +252,7 @@ export default function ShopLetLayout() {
                       <img src="assets/img/feature/feature-item-5.jpg" alt="Image" />
                     </div>
                     <div className="feature-info">
-                      <h3 className="feature-title"><a href="shop-details.html">Chicken Barista platter</a>
+                      <h3 className="feature-title"><NavLink to="/ShopSingle">Chicken Barista platter</NavLink>
                       </h3>
                       <div className="feature-meta">
                         <p className="feature-price">32.35$ <span>45.50$</span></p>
@@ -261,7 +261,7 @@ export default function ShopLetLayout() {
                           <span>4.9</span>
                         </div>
                       </div>
-                      <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                      <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                       <div className="discount-tag">
                         <img src="assets/img/feature/circle-1.png" alt="Image" />
                         <p> <span>Save</span>
