@@ -169,6 +169,14 @@ const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
 
 
+
+
+
+
+
+
+
+
     </>
   )
 }

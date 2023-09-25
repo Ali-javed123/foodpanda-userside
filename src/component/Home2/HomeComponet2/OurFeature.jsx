@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
+import { SwiperButtun } from '../../SwiperButtun';
 import { NavLink } from 'react-router-dom';
 // import required modules
 import { Autoplay, Pagination ,Navigation} from "swiper";
@@ -40,9 +40,6 @@ export default function OurFeature() {
             disableOnInteraction: false
         }}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -58,8 +55,7 @@ export default function OurFeature() {
           },
         }}
 
-        modules={[Pagination,Autoplay]}  className="feature-slider">
-          <div className="swiper-wrapper">
+        modules={[Autoplay]}  className="feature-slider">
             <SwiperSlide>
               <div className="feature-card style1">
                 <div className="feature-img">
@@ -181,6 +177,7 @@ export default function OurFeature() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
+
               <div className="feature-card style1">
                 <div className="feature-img">
                   <img src="assets/img/feature/feature-item-6.jpg" alt="Image" />
@@ -203,14 +200,14 @@ export default function OurFeature() {
                 </div>
               </div>
             </SwiperSlide>
-          </div>
+            <SwiperButtun/>
         </Swiper>
       </div>
     </div>
   </div>
-  <div className="container">
+  {/* <div className="container">
     <div className="feature-pagination" />
-  </div>
+  </div> */}
   <div className="container mt-30 text-center xl-none">
     <NavLink to="/Feature" className="btn style1">View More Item <i className="flaticon-right-arrow-2" />
     </NavLink>

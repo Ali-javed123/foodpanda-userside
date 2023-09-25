@@ -42,7 +42,7 @@ export default function ShopGirdLayout() {
                 <img src="assets/img/feature/feature-item-1.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><NavLink to="shop-details.html">Chicken In Teriyaki</NavLink>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">Chicken In Teriyaki</NavLink>
                 </h3>
                 <div className="feature-meta">
                   <p className="feature-price">22.35$ <span>30.50$</span></p>
@@ -51,7 +51,7 @@ export default function ShopGirdLayout() {
                     <span>4.9</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+               <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -66,7 +66,7 @@ export default function ShopGirdLayout() {
                 <img src="assets/img/feature/feature-item-2.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">Hotdog With Sausage</a>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">Hotdog With Sausage</NavLink>
                 </h3>
                 <div className="feature-meta">
                   <p className="feature-price">30.35$ <span>40.50$</span></p>
@@ -75,7 +75,7 @@ export default function ShopGirdLayout() {
                     <span>4.2</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -90,7 +90,7 @@ export default function ShopGirdLayout() {
                 <img src="assets/img/feature/feature-item-3.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">Breakfast With Sweet</a>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">Breakfast With Sweet</NavLink>
                 </h3>
                 <div className="feature-meta">
                   <p className="feature-price">52.35$ <span>60.50$</span></p>
@@ -99,7 +99,7 @@ export default function ShopGirdLayout() {
                     <span>4.5</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -114,7 +114,7 @@ export default function ShopGirdLayout() {
                 <img src="assets/img/feature/feature-item-4.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">Grilled Chicken Stick</a>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">Grilled Chicken Stick</NavLink>
                 </h3>
                 <div className="feature-meta">
                   <p className="feature-price">25.35$ <span>30.50$</span></p>
@@ -123,7 +123,7 @@ export default function ShopGirdLayout() {
                     <span>4.8</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -138,7 +138,7 @@ export default function ShopGirdLayout() {
                 <img src="assets/img/feature/feature-item-5.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">Chicken Barista platter</a>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">Chicken Barista platter</NavLink>
                 </h3>
                 <div className="feature-meta">
                   <p className="feature-price">32.35$ <span>45.50$</span></p>
@@ -147,7 +147,7 @@ export default function ShopGirdLayout() {
                     <span>4.9</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -162,7 +162,7 @@ export default function ShopGirdLayout() {
                 <img src="assets/img/feature/feature-item-6.jpg" alt="Image" />
               </div>
               <div className="feature-info">
-                <h3 className="feature-title"><a href="shop-details.html">French Fries Pack</a></h3>
+                <h3 className="feature-title"><NavLink to="/ShopSingle">French Fries Pack</NavLink></h3>
                 <div className="feature-meta">
                   <p className="feature-price">15.35$ <span>20.50$</span></p>
                   <div className="ratings">
@@ -170,7 +170,7 @@ export default function ShopGirdLayout() {
                     <span>4.4</span>
                   </div>
                 </div>
-                <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                 <div className="discount-tag">
                   <img src="assets/img/feature/circle-1.png" alt="Image" />
                   <p> <span>Save</span>
@@ -183,7 +183,7 @@ export default function ShopGirdLayout() {
         <div className="page-navigation">
           <div className="row align-items-center">
             <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-sm-start text-center smb-20">
-              <a href="shop-left-sidebar.html" className="btn prev">Prev Page</a>
+              <a href="#" className="btn prev">Prev Page</a>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center smb-20">
               <ul className="page-nav list-style">
@@ -193,7 +193,7 @@ export default function ShopGirdLayout() {
               </ul>
             </div>
             <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-sm-end text-center">
-              <a href="shop-left-sidebar.html" className="btn next">Next Page </a>
+              <a href="#" className="btn next">Next Page </a>
             </div>
           </div>
         </div>
