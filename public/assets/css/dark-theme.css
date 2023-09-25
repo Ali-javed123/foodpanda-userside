@@ -98,6 +98,10 @@ input:checked + .slider:before {
   display: none !important;
 }
 
+.theme-dark .client_name p {
+  color: #ffff !important;
+}
+
 
 
 .theme-dark .ratings span {

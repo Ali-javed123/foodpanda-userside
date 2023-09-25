@@ -1,13 +1,70 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 export default function WisthlistLayout() {
+  let [num, setNum]= useState(0);
+  let incNum =()=>{
+    if(num<100)
+    {
+    setNum(Number(num)+1);
+    }
+  };
+  let decNum = () => {
+     if(num>0)
+     {
+      setNum(num - 1);
+     }
+  }
+ let handleChange = (e)=>{
+   setNum(e.target.value);
+  }
+
+
+
+  let [num2, setNum2]= useState(0);
+  let incNum2 =()=>{
+    if(num2<100)
+    {
+    setNum2(Number(num2)+1);
+    }
+  };
+  let decNum2 = () => {
+     if(num2>0)
+     {
+      setNum2(num2 - 1);
+     }
+  }
+ let handleChange2 = (e)=>{
+   setNum2(e.target.value);
+  }
+
+
+
+
+
+
+  let [num3, setNum3]= useState(0);
+  let incNum3 =()=>{
+    if(num3<100)
+    {
+    setNum3(Number(num3)+1);
+    }
+  };
+  let decNum3 = () => {
+     if(num3>0)
+     {
+      setNum3(num3 - 1);
+     }
+  }
+ let handleChange3 = (e)=>{
+   setNum3(e.target.value);
+  }
   return (
     <>
 <section className="wishlist-wrap pt-100 pb-75">
   <div className="container">
     <div className="row">
       <div className="col-md-12">
-        <div className="wishlist-table ">
+      <div className="wishlist-table ">
           <table className="table table-bordered">
             <thead>
               <tr>
@@ -34,9 +91,9 @@ export default function WisthlistLayout() {
                   <div className="wh_qty">
                     <div className="product-quantity style2">
                       <div className="qtySelector">
-                        <span className="las la-minus decreaseQty" />
-                        <input type="text" className="qtyValue" defaultValue={1} />
-                        <span className="las la-plus increaseQty" />
+                        <span onClick={decNum} className="las la-minus decreaseQty" />
+                        <input type="text" className="qtyValue" value={num} />
+                        <span className="las la-plus increaseQty" onClick={incNum}/>
                       </div>
                     </div>
                   </div>
@@ -64,9 +121,9 @@ export default function WisthlistLayout() {
                   <div className="wh_qty">
                     <div className="product-quantity style2">
                       <div className="qtySelector">
-                        <span className="las la-minus decreaseQty" />
-                        <input type="text" className="qtyValue" defaultValue={1} />
-                        <span className="las la-plus increaseQty" />
+                        <span className="las la-minus decreaseQty" onClick={decNum2}/>
+                        <input type="text" className="qtyValue" value={num2} />
+                        <span className="las la-plus increaseQty" onClick={incNum2}/>
                       </div>
                     </div>
                   </div>
@@ -94,9 +151,9 @@ export default function WisthlistLayout() {
                   <div className="wh_qty">
                     <div className="product-quantity style2">
                       <div className="qtySelector">
-                        <span className="las la-minus decreaseQty" />
-                        <input type="text" className="qtyValue" defaultValue={1} />
-                        <span className="las la-plus increaseQty" />
+                        <span className="las la-minus decreaseQty" onClick={decNum3}/>
+                        <input type="text" className="qtyValue" value={num3} />
+                        <span className="las la-plus increaseQty" onClick={incNum3}/>
                       </div>
                     </div>
                   </div>

@@ -7341,3 +7341,33 @@ form.checkout textarea {
   background-color: #d8373e !important;
   cursor: pointer;
 }
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+ ul.location{
+  list-style: none;
+}
+
+ul.location li{
+  font-size: 13px;
+  color: #fff;
+}
+ul.location li i{
+  color: #FFA323;
+}
+
+
+
+
+

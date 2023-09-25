@@ -7,118 +7,118 @@ export default function ShopLetLayout() {
       <section className="Shop-wrap ptb-100">
         <div className="container">
           <div className="row gx-5">
-            <div className="col-xl-4 col-lg-12 order-xl-1 order-lg-2 order-md-2 order-2">
-              <div className="sidebar">
-                <div className="sidebar-widget search-box">
-                  <h4>Search </h4>
-                  <div className="form-group">
-                    <input type="search" placeholder="Search" />
-                    <button type="submit"> <i className="flaticon-search" /></button>
-                  </div>
-                </div>
-                <div className="sidebar-widget categories">
-                  <h4>Category</h4>
-                  <div className="category-box">
-                    <ul className="list-style">
-                      <li><a href="shop-left-sidebar.html">Dishes<i className="flaticon-right-arrow-angle" /> </a></li>
-                      <li><a href="shop-left-sidebar.html">Nuts &amp; Greens<i className="flaticon-right-arrow-angle" /> </a></li>
-                      <li><a href="shop-left-sidebar.html">Smoothies<i className="flaticon-right-arrow-angle" /> </a></li>
-                      <li><a href="shop-left-sidebar.html">Vegetables<i className="flaticon-right-arrow-angle" /> </a></li>
-                      <li><a href="shop-left-sidebar.html">Takeaway Pack<i className="flaticon-right-arrow-angle" /> </a></li>
-                      <li><a href="shop-left-sidebar.html">Fresh Fruits<i className="flaticon-right-arrow-angle" /> </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="sidebar-widget new-product">
-                  <h4>New Arrivals</h4>
-                  <div className="new-product-wrap">
-                    <div className="new-product-item">
-                      <a href="car-details.html" className="new-product-img">
-                        <img src="assets/img/blog/post-thumb-1.jpg" alt="Iamge" />
-                      </a>
-                      <div className="new-product-info">
-                        <h6><a href="shop-details.html">Pasta Barista</a></h6>
-                        <div className="price">
-                          <span>$22</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="new-product-item">
-                      <a href="car-details.html" className="new-product-img">
-                        <img src="assets/img/blog/post-thumb-3.jpg" alt="Iamge" />
-                      </a>
-                      <div className="new-product-info">
-                        <h6><a href="shop-details.html">Chicken Sandwitch</a></h6>
-                        <div className="price"><span>$32</span>
-                          <span className="discount">$35</span></div>
-                      </div>
-                    </div>
-                    <div className="new-product-item">
-                      <a href="car-details.html" className="new-product-img">
-                        <img src="assets/img/blog/post-thumb-2.jpg" alt="Iamge" />
-                      </a>
-                      <div className="new-product-info">
-                        <h6><a href="car-details.html">Strawberry Salsa</a></h6>
-                        <div className="price"><span>$98</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="sidebar-widget price-range-widget">
-                  <h4>Price Filter</h4>
-                  <div className="checkbox-item-wrap">
-                    <div className="checkbox-item d-flex justify-content-between align-items-center">
-                      <div className="checkbox style2">
-                        <input type="checkbox" id="check_1" />
-                        <label htmlFor="check_1">$100-$120</label>
-                      </div>
-                      <span>(11)</span>
-                    </div>
-                    <div className="checkbox-item d-flex justify-content-between align-items-center">
-                      <div className="checkbox style2">
-                        <input type="checkbox" id="check_2" />
-                        <label htmlFor="check_2">$120-$140</label>
-                      </div>
-                      <span>(6)</span>
-                    </div>
-                    <div className="checkbox-item d-flex justify-content-between align-items-center">
-                      <div className="checkbox style2">
-                        <input type="checkbox" id="check_3" />
-                        <label htmlFor="check_3">$140-$180</label>
-                      </div>
-                      <span>(15)</span>
-                    </div>
-                    <div className="checkbox-item d-flex justify-content-between align-items-center">
-                      <div className="checkbox style2">
-                        <input type="checkbox" id="check_4" />
-                        <label htmlFor="check_4">$180-$240</label>
-                      </div>
-                      <span>(12)</span>
-                    </div>
-                    <div className="checkbox-item d-flex justify-content-between align-items-center">
-                      <div className="checkbox style2">
-                        <input type="checkbox" id="check_5" />
-                        <label htmlFor="check_5">$240-$300</label>
-                      </div>
-                      <span>(9)</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="sidebar-widget tags">
-                  <h4>Popular Tags </h4>
-                  <div className="tag-list">
-                    <ul className="list-style">
-                      <li><a href="blog-left-sidebar.html">Food</a></li>
-                      <li><a href="blog-left-sidebar.html">Restaurant</a></li>
-                      <li><a href="blog-left-sidebar.html">Health</a></li>
-                      <li><a href="blog-left-sidebar.html">Review </a></li>
-                      <li><a href="blog-left-sidebar.html">Fastfood</a></li>
-                      <li><a href="blog-left-sidebar.html">Business</a></li>
-                    </ul>
+          <div className="col-xl-4 col-lg-12">
+        <div className="sidebar">
+          <div className="sidebar-widget search-box">
+            <h4>Search </h4>
+            <div className="form-group">
+              <input type="search" placeholder="Search" />
+              <button type="submit"> <i className="flaticon-search" /></button>
+            </div>
+          </div>
+          <div className="sidebar-widget categories">
+            <h4>Category</h4>
+            <div className="category-box">
+              <ul className="list-style">
+                <li><NavLink to="#">Dishes<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                <li><NavLink to="#">Nuts &amp; Greens<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                <li><NavLink to="#">Smoothies<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                <li><NavLink to="#">Vegetables<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                <li><NavLink to="#">Takeaway Pack<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                <li><NavLink to="#">Fresh Fruits<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+              </ul>
+            </div>
+          </div>
+          <div className="sidebar-widget new-product">
+            <h4>New Arrivals</h4>
+            <div className="new-product-wrap">
+              <div className="new-product-item">
+                <NavLink to="/Cart" className="new-product-img">
+                  <img src="assets/img/blog/post-thumb-1.jpg" alt="Iamge" />
+                </NavLink>
+                <div className="new-product-info">
+                  <h6><NavLink to="/ShopSingle">Pasta Barista</NavLink></h6>
+                  <div className="price">
+                    <span>$22</span>
                   </div>
                 </div>
               </div>
+              <div className="new-product-item">
+                <NavLink to="/Cart" className="new-product-img">
+                  <img src="assets/img/blog/post-thumb-3.jpg" alt="Iamge" />
+                </NavLink>
+                <div className="new-product-info">
+                  <h6><NavLink to="/ShopSingle">Chicken Sandwitch</NavLink></h6>
+                  <div className="price"><span>$32</span>
+                    <span className="discount">$35</span></div>
+                </div>
+              </div>
+              <div className="new-product-item">
+                <NavLink to="/Cart" className="new-product-img">
+                  <img src="assets/img/blog/post-thumb-2.jpg" alt="Iamge" />
+                </NavLink>
+                <div className="new-product-info">
+                  <h6><NavLink to="/Cart">Strawberry Salsa</NavLink></h6>
+                  <div className="price"><span>$98</span></div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div className="sidebar-widget price-range-widget">
+            <h4>Price Filter</h4>
+            <div className="checkbox-item-wrap">
+              <div className="checkbox-item d-flex justify-content-between align-items-center">
+                <div className="checkbox style2">
+                  <input type="checkbox" id="check_1" />
+                  <label htmlFor="check_1">$100-$120</label>
+                </div>
+                <span>(11)</span>
+              </div>
+              <div className="checkbox-item d-flex justify-content-between align-items-center">
+                <div className="checkbox style2">
+                  <input type="checkbox" id="check_2" />
+                  <label htmlFor="check_2">$120-$140</label>
+                </div>
+                <span>(6)</span>
+              </div>
+              <div className="checkbox-item d-flex justify-content-between align-items-center">
+                <div className="checkbox style2">
+                  <input type="checkbox" id="check_3" />
+                  <label htmlFor="check_3">$140-$180</label>
+                </div>
+                <span>(15)</span>
+              </div>
+              <div className="checkbox-item d-flex justify-content-between align-items-center">
+                <div className="checkbox style2">
+                  <input type="checkbox" id="check_4" />
+                  <label htmlFor="check_4">$180-$240</label>
+                </div>
+                <span>(12)</span>
+              </div>
+              <div className="checkbox-item d-flex justify-content-between align-items-center">
+                <div className="checkbox style2">
+                  <input type="checkbox" id="check_5" />
+                  <label htmlFor="check_5">$240-$300</label>
+                </div>
+                <span>(9)</span>
+              </div>
+            </div>
+          </div>
+          <div className="sidebar-widget tags">
+            <h4>Popular Tags </h4>
+            <div className="tag-list">
+              <ul className="list-style">
+                <li><NavLink to="#">Food</NavLink></li>
+                <li><NavLink to="#">Restaurant</NavLink></li>
+                <li><NavLink to="#">Health</NavLink></li>
+                <li><NavLink to="#">Review </NavLink></li>
+                <li><NavLink to="#">Fastfood</NavLink></li>
+                <li><NavLink to="#">Business</NavLink></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
             <div className="col-xl-8 col-lg-12 order-xl-2 order-lg-1 order-md-1 order-1">
               <div className="row align-items-center mb-25">
                 <div className="col-xl-6 col-lg-5 col-md-4">

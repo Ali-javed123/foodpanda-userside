@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 export default function OurServices() {
   return (
     <>
@@ -22,7 +22,7 @@ export default function OurServices() {
             <img className="service-card-shape-2" src="assets/img/service/service-card-shape-2.png" alt="Image" />
           </div>
           <div className="service-info">
-            <h3 className="service-title"><a href="service-details.html">Breakfast</a></h3>
+            <h3 className="service-title"><NavLink to="/ServiceDetail">Breakfast</NavLink></h3>
             <p>Lorem ipsum dolor sit amet, tetur
               piscing elit. Suspendisse smod
               congue bibendum.</p>
@@ -37,7 +37,7 @@ export default function OurServices() {
             <img className="service-card-shape-2" src="assets/img/service/service-card-shape-2.png" alt="Image" />
           </div>
           <div className="service-info">
-            <h3 className="service-title"><a href="service-details.html">Lunch</a></h3>
+            <h3 className="service-title"><NavLink to="/ServiceDetail">Lunch</NavLink></h3>
             <p>Lorem ipsum dolor sit amet, tetur
               piscing elit. Suspendisse smod
               congue bibendum.</p>
@@ -52,7 +52,7 @@ export default function OurServices() {
             <img className="service-card-shape-2" src="assets/img/service/service-card-shape-2.png" alt="Image" />
           </div>
           <div className="service-info">
-            <h3 className="service-title"><a href="service-details.html">Dinner</a></h3>
+            <h3 className="service-title"><NavLink to="/ServiceDetail">Dinner</NavLink></h3>
             <p>Lorem ipsum dolor sit amet, tetur
               piscing elit. Suspendisse smod
               congue bibendum.</p>
@@ -67,7 +67,7 @@ export default function OurServices() {
             <img className="service-card-shape-2" src="assets/img/service/service-card-shape-2.png" alt="Image" />
           </div>
           <div className="service-info">
-            <h3 className="service-title"><a href="service-details.html">Custom</a></h3>
+            <h3 className="service-title"><NavLink to="/ServiceDetail">Custom</NavLink></h3>
             <p>Lorem ipsum dolor sit amet, tetur
               piscing elit. Suspendisse smod
               congue bibendum.</p>

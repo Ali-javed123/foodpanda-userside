@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 export default function OurApp() {
   return (
     <>
@@ -35,8 +35,8 @@ export default function OurApp() {
               </div>
             </div>
             <div className="download-app-btn">
-              <a href="app.html"><img src="assets/img/app/google-playstore.png" alt="Image" /></a>
-              <a href="app.html"><img src="assets/img/app/apple-playstore.png" alt="Image" /></a>
+              <NavLink to="/OurApp"><img src="assets/img/app/google-playstore.png" alt="Image" /></NavLink>
+              <NavLink to="/OurApp"><img src="assets/img/app/apple-playstore.png" alt="Image" /></NavLink>
             </div>
           </div>
         </div>

@@ -19,12 +19,12 @@ export default function ServiceDetailLayout() {
               <h4>Category</h4>
               <div className="category-box">
                 <ul className="list-style">
-                  <li><a href="shop-left-sidebar.html">Dishes<i className="flaticon-right-arrow-angle" /> </a></li>
-                  <li><a href="shop-left-sidebar.html">Nuts &amp; Greens<i className="flaticon-right-arrow-angle" /> </a></li>
-                  <li><a href="shop-left-sidebar.html">Smoothies<i className="flaticon-right-arrow-angle" /> </a></li>
-                  <li><a href="shop-left-sidebar.html">Vegetables<i className="flaticon-right-arrow-angle" /> </a></li>
-                  <li><a href="shop-left-sidebar.html">Takeaway Pack<i className="flaticon-right-arrow-angle" /> </a></li>
-                  <li><a href="shop-left-sidebar.html">Fresh Fruits<i className="flaticon-right-arrow-angle" /> </a></li>
+                  <li><NavLink to="/ShopLeft">Dishes<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                  <li><NavLink to="/ShopLeft">Nuts &amp; Greens<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                  <li><NavLink to="/ShopLeft">Smoothies<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                  <li><NavLink to="/ShopLeft">Vegetables<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                  <li><NavLink to="/ShopLeft">Takeaway Pack<i className="flaticon-right-arrow-angle" /> </NavLink></li>
+                  <li><NavLink to="/ShopLeft">Fresh Fruits<i className="flaticon-right-arrow-angle" /> </NavLink></li>
                 </ul>
               </div>
             </div>
@@ -47,12 +47,12 @@ export default function ServiceDetailLayout() {
               <h4>Popular Tags </h4>
               <div className="tag-list">
                 <ul className="list-style">
-                  <li><a href="blog-left-sidebar.html">Food</a></li>
-                  <li><a href="blog-left-sidebar.html">Restaurant</a></li>
-                  <li><a href="blog-left-sidebar.html">Health</a></li>
-                  <li><a href="blog-left-sidebar.html">Review </a></li>
-                  <li><a href="blog-left-sidebar.html">Fastfood</a></li>
-                  <li><a href="blog-left-sidebar.html">Business</a></li>
+                  <li><NavLink to="#">Food</NavLink></li>
+                  <li><NavLink to="#">Restaurant</NavLink></li>
+                  <li><NavLink to="#">Health</NavLink></li>
+                  <li><NavLink to="#">Review </NavLink></li>
+                  <li><NavLink to="#">Fastfood</NavLink></li>
+                  <li><NavLink to="#">Business</NavLink></li>
                 </ul>
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function ServiceDetailLayout() {
                     <img src="assets/img/feature/feature-item-1.jpg" alt="Image" />
                   </div>
                   <div className="feature-info">
-                    <h3 className="feature-title"><a href="shop-details.html">Chicken In Teriyaki</a>
+                    <h3 className="feature-title"><NavLink to="/ServiceDetail">Chicken In Teriyaki</NavLink>
                     </h3>
                     <div className="feature-meta">
                       <p className="feature-price">22.35$ <span>30.50$</span></p>

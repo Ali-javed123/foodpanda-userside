@@ -60,7 +60,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className="select-currency">
-              <select>
+              <select className="form-select" aria-label="Default select example">
                 <option value={1}>USD</option>
                 <option value={2}>GBP</option>
                 <option value={3}>YEN</option>

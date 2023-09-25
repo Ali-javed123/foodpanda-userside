@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 export default function Footer() {
   return (
     <>
@@ -16,16 +16,41 @@ export default function Footer() {
               </a>
               <p className="comp-desc">Our feet are on the ground, but our the desi ambitions are to
                 above the clouds a Here is how we move to satisfy our customers</p>
-              <div className="contact-item-wrap">
+              {/* <div className="contact-item-wrap">
                 <div className="contact-item">
                   <i className="flaticon-mail-1" />
-                  <a href="mailto:"><span className="__cf_email__" data-cfemail="b8d0ddd4d4d7f8dbd9dad9d696dbd7d5">[email&nbsp;protected]</span></a>
+                  <NavLink to="mailto:creativewebsitesolutions11@gmail.com"><span className="__cf_email__" data-cfemail="b8d0ddd4d4d7f8dbd9dad9d696dbd7d5">creativewebsitesolutions11@gmail.com</span></NavLink>
+                </div>
+
+                <div className="contact-item">
+                  <i className="flaticon-mail-1" />
+                  <NavLink to="mailto:Info@creativewebssolutions.com"><span className="__cf_email__" data-cfemail="b8d0ddd4d4d7f8dbd9dad9d696dbd7d5">Info@creativewebssolutions.com </span></NavLink>
                 </div>
                 <div className="contact-item">
                   <i className="flaticon-phone-call" />
-                  <a href="tel:44345467890">+44-3454-678-90</a>
+                  <a href="tel:+1-(909)-351-3911">US : +1-(909)-351-3911</a>
                 </div>
-              </div>
+                <div className="contact-item">
+                  <i className="flaticon-phone-call" />
+                  <a href="tel:+44-7440-451891">Uk : +44-7440-451891</a>
+                </div>
+
+                
+              </div> */}
+              <ul className="location" >
+                <li  className='text-start'><i className="fa fa-envelope mt-2" /> <NavLink className={"text-light"} to="tel:+Info@Creativewebssolutions.Com">Info@Creativewebssolutions.com </NavLink>     </li>
+   <li className='text-start' ><i className="fa fa-envelope mt-2 mb-2" /> <NavLink className={"text-light"} to="mailto:creativewebsitesolutions11@gmail.com">creativewebsitesolutions11@gmail.com</NavLink> </li>
+   <h5 className='text-start text-light'>Call Number</h5>
+                <li className='text-start'><i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+1-(281)-835-8518">US/Canada : +1-(281)-835-8518</NavLink></li>
+                <li className='text-start'> <i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+44-7440-451891">Uk : +44-7440-451891</NavLink> </li>
+                <li className='text-start'> <i className="fa fa-phone mt-2" /> <NavLink className={"text-light"} to="tel:+1-(281)-985-9318">US/Canada:+1-(281)-985-9318</NavLink>     </li>
+                <li className='text-start mb-2'> <i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+49-1521-6652405">Europe:+49-1521-6652405 </NavLink> </li>
+   <h5 className='text-start text-light mt-2'>Whatsapp Number</h5>
+   <li className='text-start'> <i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+49-1521-6652405">Europe:+49-1521-6652405 </NavLink> </li>
+   <li className='text-start'> <i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+44-7440-451891">UK:+44-7440-451891 </NavLink> </li>
+   <li className='text-start'> <i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+1(909)-351-3911">US/Canada:+1(909)-351-3911</NavLink> </li>
+                <li className='text-start mt-2'><i className="fa fa-map-marker" />Address: 50 John Street Toronto Ontario M5V3T5,Canada</li>
+              </ul>
               <ul className="social-profile style1 list-style">
                 <li><a target="_blank" href="https://facebook.com/"><i className="flaticon-facebook" /> </a></li>
                 <li><a target="_blank" href="https://twitter.com/"> <i className="flaticon-twitter-1" /> </a></li>
