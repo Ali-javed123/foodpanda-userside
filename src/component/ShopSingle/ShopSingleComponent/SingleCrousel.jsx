@@ -161,18 +161,18 @@ export default function SingleCrousel() {
                 sit laudantium praesentium quibusdam optio, ab omnis magnam nobis quisquam
                 enim ad sint? Error soluta exercitationem earum atque</p>
               <ul className="content-feature-list list-style mb-0">
-                <li><i className="las la-check-circle" />Lorem ipsum dolor, sit amet.</li>
-                <li><i className="las la-check-circle" />Amet consectetur adipisicing elit.
+                <li className='text-start'><i className="las la-check-circle" />Lorem ipsum dolor, sit amet.</li>
+                <li className='text-start'><i className="las la-check-circle" />Amet consectetur adipisicing elit.
                   Officia, odit!</li>
-                <li><i className="las la-check-circle" />Aquaerat ipsa quis possimus.</li>
-                <li><i className="las la-check-circle" />Lorem, ipsum dolor sit amet
+                <li className='text-start'><i className="las la-check-circle" />Aquaerat ipsa quis possimus.</li>
+                <li className='text-start'><i className="las la-check-circle" />Lorem, ipsum dolor sit amet
                   consectetur
                   adipi.</li>
-                <li><i className="las la-check-circle" />Consectetur adipisicing elit.
+                <li className='text-start'><i className="las la-check-circle" />Consectetur adipisicing elit.
                   Voluptatibus, dignissimos.</li>
-                <li><i className="las la-check-circle" />Highly professional administration
+                <li className='text-start'><i className="las la-check-circle" />Highly professional administration
                 </li>
-                <li><i className="las la-check-circle" />Lorem ipsum dolor sit.</li>
+                <li className='text-start'><i className="las la-check-circle" />Lorem ipsum dolor sit.</li>
               </ul>
             </div>
           </div>

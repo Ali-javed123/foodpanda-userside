@@ -30,7 +30,7 @@ export default function OurFeature() {
       </div>
     </div>
   </div>
-  <div className="container-fluid">
+  <div className="container">
     <div className="row">
       <div className="col-md-12">
         <Swiper  slidesPerView={1}

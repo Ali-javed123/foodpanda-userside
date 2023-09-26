@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 export default function ReservationTable() {
   return (
     <>
@@ -29,7 +29,7 @@ export default function ReservationTable() {
                 <label htmlFor="date">Date</label>
                 <input type="date" name="date" id="date" />
               </div>
-              <a href="reservation.html" className="btn style1 mt-10">Book A Table <i className="flaticon-right-arrow-2" /></a>
+              <NavLink to="#" className="btn style1 mt-10">Book A Table <i className="flaticon-right-arrow-2" /></NavLink>
             </form>
           </div>
           <div className="opening-hrs">
