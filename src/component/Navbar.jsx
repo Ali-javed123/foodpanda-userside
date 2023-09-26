@@ -2,6 +2,9 @@ import React,{useEffect,useState} from 'react'
 import { Link ,NavLink} from 'react-router-dom';
 
 export default function Navbar() {
+  const [show,setshow]=useState(false)
+  const [show2,setshow2]=useState(false)
+
   const [scroll, setScroll] = useState(false)
   useEffect(() => {
       const handleScroll = () => {
@@ -13,10 +16,10 @@ export default function Navbar() {
   return (
     <>
   <header className={scroll?"header-wrap style2":"header-wrap style2 sticky"}>
-  <div className="header-top">
-    <div className="container">
+  <div className={show2?"header-top open":"header-top"}>
+    <div className="container-fluid">
       <div className="close-header-top xl-none">
-        <button type="button"><i className="las la-times" /></button>
+        <button onClick={()=>setshow2(false)} type="button"><i className="las la-times" /></button>
       </div>
       <div className="row align-items-center">
         <div className="col-xl-10 col-lg-12">
@@ -72,47 +75,43 @@ export default function Navbar() {
       </div>
     </div>
   </div>
-  <div className="container">
+  <div className="container-fluid">
     <div className="header-bottom">
       <div className="row align-items-center">
-        <div className="col-xl-3 col-lg-6 col-md-6 col-5">
+        <div className="col-xl-1 col-lg-6 col-md-6 col-5">
           <Link to="/" className="logo">
-            <img className="logo-light" src="assets/img/logo-black.png" alt="Image" />
-            <img className="logo-dark" src="assets/img/logo-white.png" alt="Image" />
+            <img className="logo-light" src="assets/img/Creative webs-01.png" alt="Image" />
+            <img className="logo-dark" src="assets/img/Creative webs-02.png" alt="Image" />
           </Link>
         </div>
-        <div className="col-xl-6 col-lg-6 col-md-6 col-7">
-          <div className="main-menu-wrap">
+        <div className="col-xl-8 col-lg-6 col-md-6 col-7">
+          <div className={show?"main-menu-wrap open":"main-menu-wrap"}>
             <div className="menu-close xl-none">
-              <a href=""><i className="las la-times" /></a>
+              <NavLink to="#" onClick={()=>setshow(false)}><i className="las la-times" /></NavLink>
             </div>
             <div id="menu">
               <ul className="main-menu list-style">
-                <li className="has-children">
-                  <Link className="active" href="#">Home</Link>
-                  <ul className="sub-menu list-style">
-                    <li>
-                      <Link to="/">Home 1</Link>
-                    </li>
-                    <li><Link className="active" to="/Home2">Home 2</Link></li>
-                    <li><Link to={"/Home3"}>Home 3</Link></li>
-                  </ul>
+              <li>
+                  <NavLink to="/Home2">Home</NavLink>
                 </li>
-                <li className="has-children">
-                  <a href="#">Services</a>
-                  <ul className="sub-menu list-style">
-                    <li><NavLink to="/Service">Our Service</NavLink></li>
-                    <li>
-                      <NavLink to="/ServiceDetail">Service Single</NavLink>
-                    </li>
-                  </ul>
+              <li>
+                  <NavLink to="/Service">Our Service</NavLink>
                 </li>
+
+                <li>
+                  <NavLink to="/AboutUs">AboutUs</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/Gellery">Gellery</NavLink>
+                </li>
+                <li><NavLink to="/PrivicyPolicy">Privacy Policy</NavLink></li>
+                    <li><NavLink to="/TermCondition">Terms &amp; Conditions</NavLink></li>
                 <li className="has-children">
                   <a href="#">Pages</a>
                   <ul className="sub-menu list-style">
-                    <li><NavLink to="/AboutUs">About us</NavLink></li>
+                    {/* <li><NavLink to="/AboutUs">About us</NavLink></li> */}
                     <li><NavLink to="/Feature">Feature Item</NavLink></li>
-                    <li><NavLink to="/Gellery">Gallery</NavLink></li>
+                    {/* <li><NavLink to="/Gellery">Gallery</NavLink></li> */}
                     <li><NavLink to="/SearchLocation">Search By Location</NavLink></li>
 
                     <li><NavLink to="/Reservation">Make Reservation</NavLink></li>
@@ -133,30 +132,19 @@ export default function Navbar() {
                         </li>
                       </ul>
                     </li>
-                    <li><NavLink to="/PrivicyPolicy">Privacy Policy</NavLink></li>
-                    <li><NavLink to="/TermCondition">Terms &amp; Conditions</NavLink></li>
-                    <li><a href="404.html">404 Error</a></li>
+                    {/* <li><NavLink to="/PrivicyPolicy">Privacy Policy</NavLink></li> */}
+                    {/* <li><NavLink to="/TermCondition">Terms &amp; Conditions</NavLink></li> */}
+                    {/* <li><a href="404.html">404 Error</a></li> */}
                   </ul>
                 </li>
                 <li className="has-children"><a href="#">Shop</a>
                   <ul className="sub-menu list-style">
-                    <li className="has-children">
-                      <a href="#">Shop Layout</a>
-                      <ul className="sub-menu list-style">
-                        <li>
-                          <NavLink to="/ShopLeft">Shop Left Sidebar</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/ShopRight">Shop Right Sidebar</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/ShopGird">Shop Grid</NavLink>
-                        </li>
-                      </ul>
+                  <li>
+                      <NavLink to="/ShopLeft">Shop</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <NavLink to="/ShopSingle">Shop Single</NavLink>
-                    </li>
+                    </li> */}
                     <li>
                       <NavLink to="/Cart">Cart</NavLink>
                     </li>
@@ -204,23 +192,23 @@ export default function Navbar() {
               <i className="las la-shopping-cart" />
               <span>1</span>
             </a>
-            <div className="mobile-top-bar xl-none">
+            <div onClick={()=>setshow2(!show2)} className="mobile-top-bar xl-none">
               <span />
               <span />
               <span />
             </div>
             <div className="mobile-menu xl-none">
-              <a href=""><i className="las la-bars" /></a>
+              <NavLink to="#"><i onClick={()=>setshow(!show)} className="las la-bars" /></NavLink>
             </div>
           </div>
         </div>
         <div className="col-xl-3 lg-none">
           <div className="header-bottom-right">
-            <a href="cart.html" className="shopcart">
+            <NavLink to="/Cart" className="shopcart">
               <i className="las la-shopping-cart" />
               <span>1</span>
-            </a>
-            <a href="reservation.html" className="btn style1">Make Reservation <i className="flaticon-right-arrow-2" /> </a>
+            </NavLink>
+            <NavLink to="/Reservation" className="btn style1">Make Reservation <i className="flaticon-right-arrow-2" /> </NavLink>
           </div>
         </div>
       </div>

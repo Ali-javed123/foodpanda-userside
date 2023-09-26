@@ -13,7 +13,7 @@ export default function NewsLetter() {
             <h2>Newsletter Subscribe</h2>
             <p>
 
-            <FirstName.Consumer>
+            {/* <FirstName.Consumer>
               {(fname)=>{
                 
                return(
@@ -28,7 +28,7 @@ export default function NewsLetter() {
                  )}
 
               }
-            </FirstName.Consumer>
+            </FirstName.Consumer> */}
             
                Drop us your mail address. We love to hear from you and are happy to answer any
               questions immediately.</p>

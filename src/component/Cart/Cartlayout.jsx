@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import { NavLink } from 'react-router-dom';
 export default function Cartlayout() {
   let [num, setNum]= useState(0);
   let incNum =()=>{
@@ -188,10 +188,10 @@ export default function Cartlayout() {
           </div>
           <div className="row mt-20">
             <div className="col-md-5">
-              <a href="cart.html" className="btn style1">Update Cart<i className="las la-redo-alt" /></a>
+              <NavLink to="#" className="btn style1">Update Cart<i className="las la-redo-alt" /></NavLink>
             </div>
             <div className="col-md-7 text-md-end">
-              <a href="shop-left-sidebar.html" className="btn style1">Continue Shopping<i className="flaticon-right-arrow-2" /></a>
+              <NavLink to="/ShopLeft" className="btn style1">Continue Shopping<i className="flaticon-right-arrow-2" /></NavLink>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@ export default function Cartlayout() {
             </div>
           </div>
           <div className="col-lg-12 mt-3">
-            <a href="checkout.html" className="btn style1 w-100 d-block">Proceed To Checkout<i className="lar la-check-circle" /></a>
+            <NavLink to="/Checkout" className="btn style1 w-100 d-block">Proceed To Checkout<i className="lar la-check-circle" /></NavLink>
           </div>
         </div>
       </div>

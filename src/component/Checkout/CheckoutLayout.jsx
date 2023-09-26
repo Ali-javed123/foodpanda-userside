@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 export default function CheckoutLayout() {
   return (
     <>
@@ -56,11 +56,11 @@ export default function CheckoutLayout() {
               <div className="row checkout-btn">
                 <div className="col-md-6 smb-20">
                   <h4 className="total-amt d-md-none smb-20">Total: <span>$243</span></h4>
-                  <a href="shop-left-sidebar.html" className="btn style1">Continue Shopping<i className="flaticon-right-arrow-2" /></a>
+                  <NavLink to="/ShopLeft" className="btn style1">Continue Shopping<i className="flaticon-right-arrow-2" /></NavLink>
                 </div>
                 <div className="col-md-6 d-flex align-items-center justify-content-lg-end">
                   <h4 className="total-amt sm-none">Total: <span>$243</span></h4>
-                  <a href="checkout.html" className="btn style1">Place Order<i className="las la-check-circle" /></a>
+                  <NavLink to="#" className="btn style1">Place Order<i className="las la-check-circle" /></NavLink>
                 </div>
               </div>
             </form>

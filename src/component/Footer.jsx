@@ -63,12 +63,12 @@ export default function Footer() {
                 Quick Links
               </h4>
               <ul className="footer-menu list-style">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="menus.html">Menus</a></li>
-                <li><a href="shop-left-sidebar.html">Shop</a></li>
-                <li><a href="wishlist.html">Wishlist</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="contact.html">Career</a></li>
+                <li><NavLink to="/AboutUs">About Us</NavLink></li>
+                <li><NavLink to="/Home2">Home</NavLink></li>
+                <li><NavLink to="/ShopLeft">Shop</NavLink></li>
+                <li><NavLink to="/WhistList">Wishlist</NavLink></li>
+                <li><NavLink to="/ContactUs">Contact Us</NavLink></li>
+                <li><NavLink to="/Cart">Cart</NavLink></li>
               </ul>
             </div>
             <div className="footer-widget">
@@ -145,13 +145,13 @@ export default function Footer() {
     <div className="container">
       <div className="row align-items-center">
         <div className="col-lg-6 col-md-12 col-12 order-lg-1 order-md-2 order-2">
-          <p className="copyright"><span className="las la-copyright" /> Caban. All Rights Reserved By <a href="https://hibootstrap.com/">HiBootstrap</a></p>
+          <p className="copyright"><span className="las la-copyright" /> Resturent. All Rights Reserved By Creactive Webs Solution<a href="https://creativewebssolutions.com/">Creative webs solution</a></p>
         </div>
         <div className="col-lg-6 col-md-12 col-12 order-lg-2 order-md-1 order-1">
           <ul className="footer-bottom-menu list-style">
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
-            <li><a href="contact.html">Help Center</a></li>
+            <li><NavLink to="/PrivicyPolicy">Privacy Policy</NavLink></li>
+            <li><NavLink to="/TermCondition">Terms &amp; Conditions</NavLink></li>
+            <li><NavLink to="/ContactUs">Help Center</NavLink></li>
           </ul>
         </div>
       </div>
