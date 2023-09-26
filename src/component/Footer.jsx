@@ -38,17 +38,17 @@ export default function Footer() {
                 
               </div> */}
               <ul className="location" >
-                <li  className='text-start'><i className="fa fa-envelope mt-2" /> <NavLink className={"text-light"} to="tel:+Info@Creativewebssolutions.Com">Info@Creativewebssolutions.com </NavLink>     </li>
-   <li className='text-start' ><i className="fa fa-envelope mt-2 mb-2" /> <NavLink className={"text-light"} to="mailto:creativewebsitesolutions11@gmail.com">creativewebsitesolutions11@gmail.com</NavLink> </li>
+                <li  className='text-start'><i className="fa fa-envelope mt-2" /> <a className={"text-light"} href="mailto:Info@Creativewebssolutions.Com">Info@Creativewebssolutions.com </a>     </li>
+   <li className='text-start' ><i className="fa fa-envelope mt-2 mb-2" /> <a className={"text-light"} href="mailto:creativewebsitesolutions11@gmail.com">creativewebsitesolutions11@gmail.com</a> </li>
    <h5 className='text-start text-light'>Call Number</h5>
-                <li className='text-start'><i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+1-(281)-835-8518">US/Canada : +1-(281)-835-8518</NavLink></li>
-                <li className='text-start'> <i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+44-7440-451891">Uk : +44-7440-451891</NavLink> </li>
-                <li className='text-start'> <i className="fa fa-phone mt-2" /> <NavLink className={"text-light"} to="tel:+1-(281)-985-9318">US/Canada:+1-(281)-985-9318</NavLink>     </li>
-                <li className='text-start mb-2'> <i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+49-1521-6652405">Europe:+49-1521-6652405 </NavLink> </li>
+                <li className='text-start'><i className="fa fa-phone mt-2" /><a className={"text-light"} href="tel:+1-(281)-835-8518">US/Canada : +1-(281)-835-8518</a></li>
+                <li className='text-start'> <i className="fa fa-phone mt-2" /><a className={"text-light"} href="tel:+44-7440-451891">Uk : +44-7440-451891</a> </li>
+                <li className='text-start'> <i className="fa fa-phone mt-2" /> <a className={"text-light"} href="tel:+1-(281)-985-9318">US/Canada:+1-(281)-985-9318</a>     </li>
+                <li className='text-start mb-2'> <i className="fa fa-phone mt-2" /><a className={"text-light"} href="tel:+49-1521-6652405">Europe:+49-1521-6652405 </a> </li>
    <h5 className='text-start text-light mt-2'>Whatsapp Number</h5>
-   <li className='text-start'> <i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+49-1521-6652405">Europe:+49-1521-6652405 </NavLink> </li>
-   <li className='text-start'> <i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+44-7440-451891">UK:+44-7440-451891 </NavLink> </li>
-   <li className='text-start'> <i className="fa fa-phone mt-2" /><NavLink className={"text-light"} to="tel:+1(909)-351-3911">US/Canada:+1(909)-351-3911</NavLink> </li>
+   <li className='text-start'> <i className="fa fa-phone mt-2" /><a className={"text-light"} href="tel:+49-1521-6652405">Europe:+49-1521-6652405 </a> </li>
+   <li className='text-start'> <i className="fa fa-phone mt-2" /><a className={"text-light"} href="tel:+44-7440-451891">UK:+44-7440-451891 </a> </li>
+   <li className='text-start'> <i className="fa fa-phone mt-2" /><a className={"text-light"} href="tel:+1(909)-351-3911">US/Canada:+1(909)-351-3911</a> </li>
                 <li className='text-start mt-2'><i className="fa fa-map-marker" />Address: 50 John Street Toronto Ontario M5V3T5,Canada</li>
               </ul>
               <ul className="social-profile style1 list-style">
