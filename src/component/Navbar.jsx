@@ -104,8 +104,7 @@ export default function Navbar() {
                 <li>
                   <NavLink to="/Gellery">Gellery</NavLink>
                 </li>
-                <li><NavLink to="/PrivicyPolicy">Privacy Policy</NavLink></li>
-                    <li><NavLink to="/TermCondition">Terms &amp; Conditions</NavLink></li>
+              
                 <li className="has-children">
                   <a href="#">Pages</a>
                   <ul className="sub-menu list-style">
@@ -132,8 +131,8 @@ export default function Navbar() {
                         </li>
                       </ul>
                     </li>
-                    {/* <li><NavLink to="/PrivicyPolicy">Privacy Policy</NavLink></li> */}
-                    {/* <li><NavLink to="/TermCondition">Terms &amp; Conditions</NavLink></li> */}
+                    <li><NavLink to="/PrivicyPolicy">Privacy Policy</NavLink></li>
+                    <li><NavLink to="/TermCondition">Terms &amp; Conditions</NavLink></li>
                     {/* <li><a href="404.html">404 Error</a></li> */}
                   </ul>
                 </li>
