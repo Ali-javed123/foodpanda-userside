@@ -76,7 +76,7 @@ export default function ContactUsSection3() {
       </div>
      
       <div className="col-md-12 mt-30 text-center">
-        <a href="contact.html" className="btn style1">Explore Map <i className="flaticon-right-arrow-2" />
+        <a href="#" className="btn style1">Explore Map <i className="flaticon-right-arrow-2" />
         </a>
       </div>
     </div>

@@ -18,7 +18,7 @@ export default function ContactUsSection2() {
       <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
         <div className="contact-btn">
           <a href="tel:880123654223" className="btn style1">Make A Call<i className="flaticon-right-arrow-2" /></a>
-          <a href="contact.html" className="btn style3">Contact Us<i className="flaticon-right-arrow-2" /></a>
+          <a href="#" className="btn style3">Contact Us<i className="flaticon-right-arrow-2" /></a>
         </div>
       </div>
     </div>
