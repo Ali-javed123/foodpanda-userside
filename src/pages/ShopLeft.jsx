@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Footer from '../component/Footer'
 import Navbar from '../component/Navbar'
-import ShopLetLayout from '../component/ShopLeft/ShopLetLayout.1'
+import ShopLetLayout from '../component/ShopLeft/ShopLetLayout'
 import ShopLeftHero from '../component/ShopLeft/ShopLeftHero'
 export default function ShopLeft() {
     const [mode,setmode]=useState(false)

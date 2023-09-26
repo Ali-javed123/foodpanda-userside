@@ -276,7 +276,7 @@ export default function ShopLetLayout() {
                       <img src="assets/img/feature/feature-item-6.jpg" alt="Image" />
                     </div>
                     <div className="feature-info">
-                      <h3 className="feature-title"><a href="feature.html">French Fries Pack</a></h3>
+                      <h3 className="feature-title"><NavLink to="/ShopSingle">French Fries Pack</NavLink></h3>
                       <div className="feature-meta">
                         <p className="feature-price">15.35$ <span>20.50$</span></p>
                         <div className="ratings">
@@ -284,7 +284,7 @@ export default function ShopLetLayout() {
                           <span>4.4</span>
                         </div>
                       </div>
-                      <a className="btn style2" href="cart.html"><i className="flaticon-shopping-bag-1" />Add To Cart</a>
+                      <NavLink className="btn style2" to="/Cart"><i className="flaticon-shopping-bag-1" />Add To Cart</NavLink>
                       <div className="discount-tag">
                         <img src="assets/img/feature/circle-1.png" alt="Image" />
                         <p> <span>Save</span>
@@ -297,17 +297,17 @@ export default function ShopLetLayout() {
               <div className="page-navigation">
                 <div className="row align-items-center">
                   <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-sm-start text-center smb-20">
-                    <a href="shop-left-sidebar.html" className="btn prev">Prev Page</a>
+                    <NavLink to="#" className="btn prev">Prev Page</NavLink>
                   </div>
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center smb-20">
                     <ul className="page-nav list-style">
-                      <li><a className="active" href="shop-left-sidebar.html">1</a></li>
-                      <li><a href="shop-left-sidebar.html">2</a></li>
-                      <li><a href="shop-left-sidebar.html">3</a></li>
+                      <li><NavLink to="#" className="active" >1</NavLink></li>
+                      <li><NavLink to="#">2</NavLink></li>
+                      <li><NavLink to="#">3</NavLink></li>
                     </ul>
                   </div>
                   <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-sm-end text-center">
-                    <a href="shop-left-sidebar.html" className="btn next">Next Page </a>
+                    <NavLink to="#" className="btn next">Next Page </NavLink>
                   </div>
                 </div>
               </div>
